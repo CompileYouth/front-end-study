@@ -122,7 +122,7 @@ Markdown 支持使用不同数量的 `>` 表示嵌套引用。
 Markdown 中有三种方式实现超链接。
 
 	//方式 1
-	[百度]（http://www.baidu.com）
+	[百度](http://www.baidu.com)
 
 	//方式 2
 	[百度][Baidu-url]
@@ -143,8 +143,8 @@ Markdown 中有三种方式实现超链接。
 下面是完整示例：
 
 ```
-	[百度][Baidu-url]
-	[Baidu-url]: http://www.baidu.com "这是提示文字"
+[百度][Baidu-url]
+[Baidu-url]: http://www.baidu.com "这是提示文字"
 ```
 
 第三种方式是用 `<>` 来包裹 URL。
