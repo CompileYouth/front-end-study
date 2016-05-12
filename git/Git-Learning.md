@@ -4,5 +4,4 @@
 
 1. [Git 官方文档](https://git-scm.com/doc)
 2. [图解 Git](https://marklodato.github.io/visual-git-guide/index-zh-cn.html)
-
-[Git Cheatsheet 中文版](./git-cheatsheet-CN-dark.pdf)或者[Git Cheatsheet 英文版](./git-cheatsheet-EN-dark.pdf)
+3. [Git Cheatsheet 中文版](./git-cheatsheet-CN-dark.pdf)或者[Git Cheatsheet 英文版](./git-cheatsheet-EN-dark.pdf)
