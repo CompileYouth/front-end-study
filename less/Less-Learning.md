@@ -1,3 +1,5 @@
+
+
 Less 是一门 CSS 预处理语言，使得 CSS 更容易维护与扩充。
 
 ## 变量
@@ -24,12 +26,18 @@ Less 是一门 CSS 预处理语言，使得 CSS 更容易维护与扩充。
 @var: red;
 
 #page {
-  @var: white;
-  #header {
-    color: @var; // white
-  }
+    @var: white;
+    #header {
+        color: @var; // white
+    }
 }
 ```
+
+## 函数
+
+Less 内置了多种函数用于转换颜色、处理字符串、算术运算等。
+
+更多的函数请参考[Less 函数参考手册](http://lesscss.org/functions/)
 
 ## 混合
 
@@ -52,13 +60,13 @@ Less 中的混合是指将 CSS 中的一组属性混合到另外一组属性中�
 编译结果：
 ``` less
 .class, #id {
-  color: #0767b8;
+    color: #0767b8;
 }
 .mixin-class {
-  color: #0767b8;
+    color: #0767b8;
 }
 .mixin-id {
-  color: #0767b8;
+    color: #0767b8;
 }
 ```
 
@@ -66,14 +74,14 @@ Less 中的混合是指将 CSS 中的一组属性混合到另外一组属性中�
 
 ``` less
 .my-mixin {
-  color: black;
+    color: black;
 }
 .my-other-mixin() {
-  background: white;
+    background: white;
 }
 .class {
-  .my-mixin;
-  .my-other-mixin;
+    .my-mixin;
+    .my-other-mixin;
 }
 ```
 
@@ -81,11 +89,11 @@ Less 中的混合是指将 CSS 中的一组属性混合到另外一组属性中�
 
 ``` less
 .my-mixin {
-  color: black;
+    color: black;
 }
 .class {
-  color: black;
-  background: white;
+    color: black;
+    background: white;
 }
 ```
 
@@ -93,12 +101,12 @@ Less 中的混合是指将 CSS 中的一组属性混合到另外一组属性中�
 
 ``` less
 .my-hover-mixin() {
-  &:hover {
-    border: 1px solid red;
-  }
+    &:hover {
+        border: 1px solid red;
+    }
 }
 button {
-  .my-hover-mixin;
+.   my-hover-mixin;
 }
 ```
 
@@ -106,7 +114,7 @@ button {
 
 ``` less
 button:hover {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 ```
 
@@ -165,6 +173,28 @@ Less 中定义的变量可以进行运算。
 
 ## 命名空间
 
+``` less
+#bundle {
+    .button {
+        background-color: #0767b8;
+        &:hover {
+            background-color: white
+        }
+    }
+    .tab { ... }
+    .citation { ... }
+}
+```
+
+当把 `.button` 混合进 `#header a`中时，我们可以这么做：
+
+``` less
+#header a {
+    color: orange;
+    #bundle > .button;
+}
+```
+
 ## 注释
 
 Less 中块注释和行注释均可以使用，当时要注意块注释的内容在编译后仍然存在，而行注释中的内容在编译后则会被删除。
@@ -185,4 +215,13 @@ style comment! */
 @var: red;
 
 @var: white;
+```
+
+## 导入
+
+可以导入 `.less` 或者 `.css` 文件，如果导入 `.less` 文件，则可以省略拓展名。需要注意的是，变量的使用与导入的顺序无关。
+
+``` less
+@import "library"; // library.less
+@import "typo.css";
 ```
