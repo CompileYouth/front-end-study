@@ -1,6 +1,5 @@
 # front-end-study
 
-test
 ## 基础篇
 
 ### git
