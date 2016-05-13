@@ -1,4 +1,4 @@
-Less 是一门 CSS 预处理语言，使得 CSS 更容易维护与扩充。
+Less 是一门 CSS 预处理语言，使得 CSS 更容易维护与扩充。掌握 Less 只需要掌握其中的几个关键词，包括：变量、函数、混合、嵌套等。
 
 ## 变量
 
@@ -266,6 +266,32 @@ button:hover {
 }
 ```
 
+### 作为函数的混合
+
+调用混合时将返回混合中定义的变量。
+
+``` less
+.mixin() {
+    @width:  100%;
+    @height: 200px;
+}
+
+.caller {
+    .mixin();
+    width:  @width;
+    height: @height;
+}
+```
+
+编译结果：
+
+``` less
+.caller {
+    width:  100%;
+    height: 200px;
+}
+```
+
 ## 嵌套
 
 在 Less 中，选择器可以嵌套。
@@ -365,7 +391,7 @@ style comment! */
 
 ## 导入
 
-可以导入 `.less` 或者 `.css` 文件，如果导入 `.less` 文件，则可以省略拓展名。需要注意的是，变量的使用与导入的顺序无关。
+可以导入 `.less` 或者 `.css` 等格式文件，如果导入 `.less` 文件，则可以省略拓展名。在 CSS 中，`@import` 必须放在 CSS 文件的开头，但 Less 中没有这样的要求。同时需要注意的是，变量的使用与导入的顺序无关。
 
 ``` less
 @import "library"; // library.less
