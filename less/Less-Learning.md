@@ -1,5 +1,3 @@
-
-
 Less 是一门 CSS 预处理语言，使得 CSS 更容易维护与扩充。
 
 ## 变量
@@ -31,6 +29,88 @@ Less 是一门 CSS 预处理语言，使得 CSS 更容易维护与扩充。
         color: @var; // white
     }
 }
+```
+
+### 变量懒加载
+
+Less 中的变量不需要在使用之前定义，只需要在作用域可访问即可。
+
+``` less
+.lazy-eval {
+    width: @var;
+}
+
+@var: 9%;
+```
+
+或者：
+
+``` less
+.lazy-eval-scope {
+    width: @var;
+}
+
+@var: 100%;
+```
+
+### 变量插值
+
+Less 中的变量不仅可以表示 CSS 中的属性值，同时也能用于其他地方，比如选择器名、属性名、URL 拼接、`@import` 拼接等。
+
+#### 选择器名
+
+``` less
+@mySelector: banner;
+
+.@{mySelector} {
+    font-weight: bold;
+}
+```
+
+编译结果：
+
+``` less
+.banner {
+    font-weight: bold;
+}
+```
+
+#### 属性名
+
+``` less
+@property: color;
+
+.widget {
+    @{property}: #0ee;
+    background-@{property}: #999;
+}
+```
+
+编译结果：
+
+``` less
+.widget {
+    color: #0ee;
+    background-color: #999;
+}
+```
+
+#### URL
+
+``` less
+@images: "../img";
+
+body {
+    background: url("@{images}/white-sand.png");
+}
+```
+
+#### `@import`
+
+``` less
+@themes: "../../src/themes";
+
+@import "@{themes}/tidal-wave.less";
 ```
 
 ## 函数
@@ -119,6 +199,72 @@ button:hover {
 ```
 
 从上面例子中不难总结，所谓的“混合”便是利用选择器声明了一段 CSS 块，选择器被调用时将会被替换为其所代表的 CSS 块。
+
+### 带参数的混合
+
+``` less
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+#header {
+  .border-radius(6px);
+}
+```
+
+给参数设定默认值：
+
+``` less
+.border-radius(@radius: 6px) {
+    border-radius: @radius;
+}
+
+#header {
+  .border-radius();
+}
+```
+
+多个参数之间用 `;` 隔开。
+
+`@arguments` 在混合中表示所有的参数。
+
+``` less
+.box-shadow(@x: 0; @y: 0; @blur: 1px; @color: #000) {
+    box-shadow: @arguments;
+}
+.big-block {
+    .box-shadow(2px; 5px);
+}
+```
+
+编译结果：
+
+``` less
+.big-block {
+    box-shadow: 2px 5px 1px #000;
+}
+```
+
+`@rest` 在混合中表示剩余的参数。
+
+``` less
+.box-shadow(@margin: 6px; ...) {
+    margin: @margin;
+    box-shadow: @rest;
+}
+.big-block {
+    .box-shadow(8px; 2px; 5px; 1px; #000);
+}
+```
+
+编译结果：
+
+``` less
+.big-block {
+    margin: 8px;
+    box-shadow: 2px 5px 1px #000;
+}
+```
 
 ## 嵌套
 
