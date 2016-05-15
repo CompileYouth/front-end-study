@@ -9,6 +9,8 @@
 
 [Git Cheatsheet 中文版](./git-cheatsheet-CN-dark.pdf)或者[Git Cheatsheet 英文版](./git-cheatsheet-EN-dark.pdf)
 
+-------------
+
 看完了教程，下面我们搭建一个实例来巩固一下内容。
 
 我们先在 Github 新建一个叫 "learn-git" 的项目，如下：
