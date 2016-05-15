@@ -15,3 +15,19 @@
 复制项目的地址：
 
 ![](./res/copy-url.png)
+
+下面我们在本地 clone 这个项目，选择目标文件夹，打开 "git bash" 输入命令：
+
+```
+git clone https://github.com/CompileYouth/learn-git.git
+```
+
+你应该将项目 URL 替换成你在上一步复制的项目地址。
+
+进入项目：
+
+```
+cd learn-git
+```
+
+至此，你已经成功拷贝远程代码仓库的代码至本地。
