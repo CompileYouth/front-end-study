@@ -219,3 +219,5 @@ Markdown 支持以下这些符号前插入 `\` 而显示其本来样子：
 - Windows 环境下，推荐 [Tyora](https://www.typora.io/)、[Markdownpad](http://markdownpad.com/)，自带图床功能；
 - Mac 环境下，推荐 Typora、Mou；
 - 笔记软件： 为知笔记较好的支持 markdown，且支持 Windows、Mac、web、ios、android 等各个平台。
+
+[原文](https://segmentfault.com/a/1190000003930804)
