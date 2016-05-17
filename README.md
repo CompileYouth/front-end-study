@@ -34,6 +34,8 @@
 
 ### ES6
 
+[ES6 Learning](./es6/ES6-Learning.md)
+
 ### Flexbox
 
 ### Node
