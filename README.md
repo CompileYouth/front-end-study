@@ -12,9 +12,11 @@
 
 ### atom
 
-[Emmet Learning](./emmet/Emmet-Learning.md)
+[配置你的工作环境](./atom/Atom-Learning.md)
 
 ### Emmet
+
+[Emmet Learning](./emmet/Emmet-Learning.md)
 
 ### HTML5
 
