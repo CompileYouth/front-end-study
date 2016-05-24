@@ -32,6 +32,8 @@
 
 ### Regular Expressions
 
+[Regular-Expression Learning](./regexpr/Regular-Expression-Learning.md)
+
 ## 进阶篇
 
 ### ES6
