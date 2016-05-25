@@ -142,7 +142,11 @@
 用 `()` 表示子表达式
 
 
-## 回溯引用，前后一致
+## 回溯引用，前后一致匹配
+
+`\1` 表示对第一个子表达式进行引用，以此类推，`\2` 对第二个子表达式进行引用
+
+`(6{3}\w)\1`： 可以匹配 `666a666a` 等
 
 
 
@@ -155,4 +159,11 @@ const re = /ab+c/; // 方式 1
 const re = new RegExp("ab+c"); // 方式 2
 ```
 
-# 实践
+
+# 练习
+
+- <http://regex.alf.nu/> 答案： <http://felixc.at/regex.alf.nu>
+
+拓展资料：
+
+- <http://notes.maxwi.com/2015/10/04/Regular-Expression-Study-Note/>
