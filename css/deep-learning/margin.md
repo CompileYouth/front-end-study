@@ -97,3 +97,5 @@
     margin: 50%;
 }
 ```
+
+![](./res/percent3.png)
