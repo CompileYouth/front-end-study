@@ -1,6 +1,6 @@
-## 深入理解 margin
+# 深入理解 margin
 
-### margin 与容器尺寸
+## margin 与容器尺寸
 
 标准盒模型与元素尺寸
 
@@ -11,7 +11,7 @@
 - 可视尺寸： clientWidth(标准)
 - 占据尺寸： outerWidth
 
-#### margin 与可视尺寸
+### margin 与可视尺寸
 
 1. 适用于没有设定 width / height 的普通 block 水平元素；
 2. 只适用于水平方向尺寸（即 margin 只会修改水平方向尺寸）
@@ -48,7 +48,7 @@
 
 ![](./res/margin-left2.png)
 
-#### margin 与占据尺寸（元素占据的空间）
+### margin 与占据尺寸（元素占据的空间）
 
 1. block / inline-block 水平元素均适用；
 2. 与有没有设定 width / height 值无关；
@@ -99,3 +99,41 @@
 ```
 
 ![](./res/percent3.png)
+
+## margin 重叠
+
+特性：
+
+- block 水平元素（不包括 float 和 absolute 元素）
+-  不考虑 writing-mode， 只发生在垂直方向（margin-top 和 margin-bottom）
+
+margin 重叠 3 种情境：
+
+- 相邻的兄弟元素
+
+![](./res/overlap1.png)
+
+- 父级和第一个 / 最后一个子元素
+
+![](./res/overlap2-1.png)
+
+![](./res/overlap2-2.png)
+
+![](./res/overlap2-3.png)
+发现上面三段的代码效果是一样的。
+
+    父子 margin 重叠其他条件：
+
+    - margin-top 重叠：
+        - 父元素非块状格式化上下文元素
+        - 父元素没有 border-top 设置
+        - 父元素没有 padding-top 值
+        - 父元素和第一个子元素之间没有 inline 元素分割
+    - margin-bottom 重叠：
+        - 父元素非块状格式化上下文元素
+        - 父元素没有 border-bottom 设置
+        - 父元素没有 padding-bottom 值
+        - 父元素和最后一个子元素之间没有 inline 元素分割
+        - 父元素没有 height， min-height, max-height 限制
+
+- 空的 block 元素
