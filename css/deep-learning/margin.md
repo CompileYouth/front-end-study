@@ -109,18 +109,18 @@
 
 margin 重叠 3 种情境：
 
-- 相邻的兄弟元素
+1. 相邻的兄弟元素
 
-![](./res/overlap1.png)
+    ![](./res/overlap1.png)
 
-- 父级和第一个 / 最后一个子元素
+2. 父级和第一个 / 最后一个子元素
 
-![](./res/overlap2-1.png)
+    ![](./res/overlap2-1.png)
 
-![](./res/overlap2-2.png)
+    ![](./res/overlap2-2.png)
 
-![](./res/overlap2-3.png)
-发现上面三段的代码效果是一样的。
+    ![](./res/overlap2-3.png)
+    发现上面三段的代码效果是一样的。
 
     父子 margin 重叠其他条件：
 
@@ -136,4 +136,13 @@ margin 重叠 3 种情境：
         - 父元素和最后一个子元素之间没有 inline 元素分割
         - 父元素没有 height， min-height, max-height 限制
 
-- 空的 block 元素
+3. 空的 block 元素
+
+    ![](./res/overlap3.png)
+
+    空 block 元素 margin 重叠其他条件：
+
+    - 元素没有 border 设置
+    - 元素没有 padding 值
+    - 里面没有 inline 元素
+    - 没有 height，或者 min-height
