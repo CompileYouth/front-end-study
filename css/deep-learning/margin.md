@@ -146,3 +146,9 @@ margin 重叠 3 种情境：
     - 元素没有 padding 值
     - 里面没有 inline 元素
     - 没有 height，或者 min-height
+
+### margin 重叠的计算规则
+
+- 正正取大值
+- 正负值相加
+- 负负最负值
