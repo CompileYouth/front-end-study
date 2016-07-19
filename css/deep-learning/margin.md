@@ -210,3 +210,60 @@ margin 重叠 3 种情境：
 ### margin 负值下的等高布局 -- margin 改变元素占据空间
 
 ![](./res/margin/minus3.png)
+
+## margin
+
+### inline 水平元素的垂直 margin 失效
+
+![](./res/margin/notwork1.png)
+
+![](./res/margin/notwork2.png)
+
+### margin 重叠
+
+### `diaplay: table-cell`
+
+![](./res/margin/notwork3.png)
+
+### `position: absolute`
+
+决定定位元素非定位方位的 margin 值“无效”
+
+```
+img {
+    top: 10%;
+    left: 30%;
+}
+```
+
+则设置 `margin-bottom` 或者 `margin-right` 无效
+
+决定定位的 margin 值一直有效，但因为元素脱离了文档流，所以看起来无效
+
+### 鞭长莫及导致的无效
+
+![](./res/margin/notwork4.png)
+
+![](./res/margin/notwork5.png)
+
+`float: left` 破坏了文档流，文字的 margin-left 其实不是相对了图片右边，所以如果 margin-left 足够大，那么就可以显示出效果。
+
+![](./res/margin/notwork6.png)
+
+### 内联特性导致的无效
+
+![](./res/margin/notwork7.png)
+
+![](./res/margin/notwork8.png)
+
+当 margin-top 小与一定值后，图片位置则不会变化
+
+![](./res/margin/notwork9.png)
+
+![](./res/margin/notwork10.png)
+
+此时，添加一个文字来辅助理解。
+
+![](./res/margin/notwork11.png)
+
+此时，可以看出来，内联元素受制于其所在的父元素，所以 margin 失效
