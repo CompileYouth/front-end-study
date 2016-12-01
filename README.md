@@ -10,7 +10,7 @@
 
 ## Atom
 
-
+磨刀不误砍柴工，先搭好 [Atom](./atom/磨刀不误砍柴工：Atom 介绍.md) 再说。
 
 ## Git 和 Github
 
