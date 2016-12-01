@@ -31,3 +31,21 @@ Themes 部分你可以设置编辑器的主题，我采用了默认的主题。�
 Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面我主要介绍一下我主要使用的 packages：
 
 - git-control： 这是我最常使用的 package，我可以不用记很多繁琐的 git 命令，常用的命令都能用界面完成，简单便捷，又能减少出错
+
+    ![](./res/git-control.png)
+
+- platformio-ide-terminal： 可以在 Atom 中直接打开终端
+
+    ![](./res/platformio-ide-terminal.png)
+
+- autocomplete-paths： 自动补全路径
+- autocomplete-modules： 自动补全模块名
+- auto-fold： 可以折叠代码
+- file-icons： 根据文件类型显示不同的图标
+
+    ![](./res/file-icons.png)
+
+- pigments：显示颜色
+- color-picker： 以可视化的方式编辑颜色
+- minimap：显示代码的缩略图，用过 sublime 的小伙伴会比较熟悉
+- emmet： 写 HTML 的利器，根据特定语法快速生成 HTML
