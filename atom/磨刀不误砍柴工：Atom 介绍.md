@@ -115,9 +115,9 @@ Themes 部分你可以设置编辑器的主题，我采用了默认的主题。�
 
 ## 安装 package
 
-Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面我主要介绍一下我主要使用的 packages（大部分图片来自 package 官网），大家可以根据需要选择，另外，需要提一下的是，大都数的 package 也能进行自定义设置。
+Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面我主要介绍一下我主要使用的 packages（大部分图片来自 package 官网），大家可以根据需要选择，另外，需要提一下的是，大多数的 package 也能进行自定义设置。
 
-- git-control： 这是我最常使用的 package，我可以不用记很多繁琐的 git 命令，常用的命令都能用界面完成，简单便捷，又能减少出错
+- git-control： 这是我最常使用的 package，我可以不用记很多繁琐的 git 命令，常用的命令都能用界面完成，简单便捷，又能减少出错。这个插件的详细使用请参加[版本配置工具：Git 与 Github]()
 
     ![](./res/git-control.png)
 
@@ -203,4 +203,4 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 2. 找到 tree-view；
 3. 勾选 "Hide Ignored Names"，搞定。
 
-以上是我在实际中对 Atom 的使用，如果你在实践中有其他更酷炫更有效的操作、package，记得留言，如果你在使用中遇到了问题，也欢迎留言。
+以上是我在实际中对 Atom 的使用，如果你在实践中有其他更酷炫更有效的操作、package，记得 fork + pull request / 留言，如果你在使用中遇到了问题，也欢迎 fork + pull request / 留言。
