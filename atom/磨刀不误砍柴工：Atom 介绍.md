@@ -59,6 +59,12 @@ nrm use taobao
 
 ![](./res/nrm.png)
 
+## Snippts
+
+将你一般比较常写的代码做成模板，方便以后自动填充。
+
+![](./res/snippets.png)
+
 # 定制你的 Atom
 
 下载好对应操作系统的 Atom 并且安装后，首先就是进入设置界面（Windows 下的 Settings 或 Mac 下的 Preferences)。Atom 设置的一个我认为最大的好处就是，她将所有的设置都通过图形化界面来操作，而不像一些编辑器通过一大堆很繁琐的配置文件。你会看到设置界面的导航栏：
@@ -69,10 +75,10 @@ nrm use taobao
 - Core：这部分是整个编辑器的核心设置，一般情况下全部默认即可
 - Editor： 主要对编辑器的可视化进行设置，一般修改样式即可
 - Keybingdings： 编辑器中操作的快捷键
-- Packages： Atom 集成了很多的包，这是她可以被定制化的一个重要因素。在这里会看到 Atom 装的所有包
+- Packages： Atom 集成了很多的 package ，这是她可以被定制化的一个重要因素。在这里会看到 Atom 装的所有 package
 - Themes： Atom 的主题，也可以被定制化
-- Updates： 显示需要更新的包或者主题
-- Install： 在这个界面，我们可以安装各种各样的包、主题，这是我们用的最多的一个菜单
+- Updates： 显示需要更新的 package 或者主题
+- Install： 在这个界面，我们可以安装各种各样的 package 、主题，这是我们用的最多的一个菜单
 
 ## 定制编辑器
 
@@ -93,7 +99,7 @@ Themes 部分你可以设置编辑器的主题，我采用了默认的主题。�
 
 ## 安装 package
 
-Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面我主要介绍一下我主要使用的 packages（大部分图片来自 package 官网）：
+Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面我主要介绍一下我主要使用的 packages（大部分图片来自 package 官网），另外，需要提一下的是，大都数的 package 也能进行自定义设置。
 
 - git-control： 这是我最常使用的 package，我可以不用记很多繁琐的 git 命令，常用的命令都能用界面完成，简单便捷，又能减少出错
 
@@ -139,6 +145,10 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 
     ![](./res/project-manager.gif)
 
+- javascript-snippet：高频语句的自动填充，是对 Atom 自带的 snippets 的一个拓展
+
+    ![](./res/javascript-snippet.gif)
+
 - emmet： 写 HTML 的利器，根据特定语法快速生成 HTML
 - language-babel： 支持 ES2015、JSX 等语法高亮
 
@@ -172,3 +182,6 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 1. 打开 设置 -> Packages；
 2. 找到 tree-view；
 3. 勾选 "Hide Ignored Names"，搞定。
+
+
+以上是我在实际中对 Atom 的使用，如果你在实践中有其他更酷炫更有效的操作、package，记得留言，如果你在使用中遇到了问题，也欢迎留言。
