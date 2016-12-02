@@ -10,11 +10,11 @@
 
 ## Atom
 
-磨刀不误砍柴工，先搭好 [Atom](./atom/磨刀不误砍柴工：Atom 介绍.md) 再说。
+[磨刀不误砍柴工，搭好你的前端开发环境： Atom](./atom/磨刀不误砍柴工：Atom 介绍.md)。
 
 ## Git 和 Github
 
-
+[版本控制工具：Git 和 Github](./git/Git-Learning.md)
 
 ## Markdown
 
