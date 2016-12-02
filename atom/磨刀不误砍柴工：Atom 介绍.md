@@ -172,3 +172,28 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 1. 打开 设置 -> Packages；
 2. 找到 tree-view；
 3. 勾选 "Hide Ignored Names"，搞定。
+
+## 在切换项目的时候切换代码风格
+
+写公司的或者别人的项目的时候，需要遵守相应的代码规范，所以有的时候每次切换项目都不得不修改atom的编辑器设置。
+[editorconfig](https://atom.io/packages/editorconfig)插件可以帮我们解决这个麻烦。我们可以通过一个配置文件指定想要的编辑器设置，切换项目的时候，editorconfig插件自动地把这些设置应用到编辑器上。
+
+具体的步骤
+
+1. 安装editorconfig package
+2. 在需要自定义代码风格的项目中，新建.editorconfig文件，输入配置信息，示例文件
+
+```
+root = true
+
+[*]
+indent_style = tab
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+```
+
+对这些参数详细的解释[请戳这里](https://atom.io/packages/editorconfig)
