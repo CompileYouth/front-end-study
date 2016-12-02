@@ -149,6 +149,10 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 
     ![](./res/javascript-snippet.gif)
 
+- editorconfig：对不同的项目配置不同的代码风格
+
+    ![](./res/editorconfig.gif)
+
 - emmet： 写 HTML 的利器，根据特定语法快速生成 HTML
 - language-babel： 支持 ES2015、JSX 等语法高亮
 
@@ -182,6 +186,5 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 1. 打开 设置 -> Packages；
 2. 找到 tree-view；
 3. 勾选 "Hide Ignored Names"，搞定。
-
 
 以上是我在实际中对 Atom 的使用，如果你在实践中有其他更酷炫更有效的操作、package，记得留言，如果你在使用中遇到了问题，也欢迎留言。
