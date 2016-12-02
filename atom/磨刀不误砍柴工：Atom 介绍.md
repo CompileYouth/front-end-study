@@ -131,9 +131,27 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 
     ![](./res/minimap.png)
 
+- ask-stack：当你有什么技术问题，你几乎都可以在 [stackoverflow](http://stackoverflow.com/) 上找到，而这个插件就是让你不用离开 Atom 就可以使用 stackoverflow
+
+    ![](./res/ask-stack.gif)
+
+- project-manager：更好地管理你的项目
+
+    ![](./res/project-manager.gif)
+
 - emmet： 写 HTML 的利器，根据特定语法快速生成 HTML
 - language-babel： 支持 ES2015、JSX 等语法高亮
 
+# 便捷的操作
+
+下面列举一些我常用的快捷操作，这些操作很大程度上帮助我提升了效率。部分内容会与上面的 Atom 特色重复。
+
+- 拖动一个文件夹到 Atom 窗口或者 Atom 应用图标，便能在 Atom 中打开这个文件夹
+- 拖动一个文件到 Atom 窗口或者 Atom 应用图标，便在 Atom 中打开这个文件所在的文件夹
+- cmd + T / ctrl + T： 全局关键词快速模糊搜索
+- 选中项目根目录，右键，选择 “Search in Directory”，可以全局准确搜索关键字
+- cmd + F / ctrl + F： 文件中关键词搜索及替换
+- 选择多项：按住 cmd / ctrl，用鼠标点击另外一处你想选择的地方，这样，你就可以看到多个一起闪动的光标
 
 # Atom -- 常见问题解决
 
