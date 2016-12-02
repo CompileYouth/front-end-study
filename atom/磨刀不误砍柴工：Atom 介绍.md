@@ -165,7 +165,7 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 
     ![](./res/javascript-snippet.gif)
 
-- editorconfig：对不同的项目配置不同的代码风格
+- editorconfig：自动对不同的项目配置不同的代码风格
 
     ![](./res/editorconfig.gif)
 
