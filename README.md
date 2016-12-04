@@ -10,11 +10,11 @@
 
 ## Atom
 
-[磨刀不误砍柴工，搭好你的前端开发环境： Atom](./atom/磨刀不误砍柴工：Atom 介绍.md)。
+[磨刀不误砍柴工，搭好你的前端开发环境： Atom](./tool/atom/磨刀不误砍柴工：Atom 介绍.md)。
 
 ## Git 和 Github
 
-[版本控制工具：Git 和 Github](./git/Git-Learning.md)
+[版本控制工具：Git 和 Github](./tool/git/Git-Learning.md)
 
 ## Markdown
 
@@ -115,7 +115,7 @@
 
 ## 原型链
 
-[JavaScript 中的 this]()
+[JavaScript 中的 this](./js/this/JavaScript 中的 this.md)
 
 ## JavaScript 中的 for 循环
 
@@ -125,7 +125,7 @@
 
 ## 事件
 
-
+[JavaScript 中的事件]()
 
 ## 异步编程
 
