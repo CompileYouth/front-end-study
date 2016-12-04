@@ -109,6 +109,10 @@
 
 这部分主要汇总一些比较零碎同时也比较基础的 JS 知识，对于复杂的 JS 知识，下面会有专门的章节进行详细地描述。
 
+### JavaScript 中的 for 循环
+
+[JavaScript 中的 for 循环](./js/for/JavaScript 中的 for 循环.md)
+
 ## 闭包
 
 
@@ -116,8 +120,6 @@
 ## 原型链
 
 [JavaScript 中的 this](./js/this/JavaScript 中的 this.md)
-
-## JavaScript 中的 for 循环
 
 
 ## JavaScript 中的 arguments
