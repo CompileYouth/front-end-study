@@ -113,6 +113,10 @@
 
 [JavaScript 中的 for 循环](./js/for/JavaScript 中的 for 循环.md)
 
+### JavaScript 中的 console
+
+[JavaScript 中的 console](./js/console/JavaScript 中的 console.md)
+
 ## 闭包
 
 
