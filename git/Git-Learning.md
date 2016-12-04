@@ -1,3 +1,7 @@
+Git 是一个如今最流行的、也是最为广大人民群众接受的版本控制工具，身为一名程序员，Git 可以说是一项必须要求掌握的技能。
+
+网上讲解 Git 的资料不胜枚举，在这里就不赘述，给大家推荐一些我学 Git 时参考的资料。
+
 新手推荐廖雪峰老师的[Git 教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 也可以参考其他教程网站：
@@ -8,8 +12,6 @@
 以及一张Cheat Sheet：
 
 [Git Cheatsheet 中文版](./git-cheatsheet-CN-dark.pdf)或者[Git Cheatsheet 英文版](./git-cheatsheet-EN-dark.pdf)
-
-## Git 进阶 -- git flow
 
 -------------
 
@@ -84,3 +86,6 @@ git push origin dev
 ```
 git branch -d feature-readme
 ```
+## 实践中的 Git 和 Github
+
+上面仅仅是个小的 Demo，让大家对克隆项目、增删改文件、上传修改的过程有个大概的了解。下面就主要总结一下我在实际中对 Git 和 Github 的使用。
