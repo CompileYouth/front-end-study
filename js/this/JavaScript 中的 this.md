@@ -1,5 +1,3 @@
-# 精确把握 JavaScript 中的 this
-
 this 是 JavaScript 中的一个关键字，当一个函数被调用时，除了传入函数的显式参数以外，名为 this 的隐式参数也被传入了函数。this 参数指向了一个自动生成的内部对象，这个内部对象被称为**函数上下文**。与其他面向对象的语言不同的是， JavaScript 中的 this 依赖于函数的调用方式。所以，想要明白 this 的指向问题，还必须先研究函数在 JavaScript 中是如何被调用的。
 
 ## 调用方式 1、作为函数进行调用
@@ -12,7 +10,7 @@ this 是 JavaScript 中的一个关键字，当一个函数被调用时，除了
     }
     func1();
 
-    var func2 = function () {
+    const func2 = function () {
         console.log(this === window); // true
     }
     func2();
@@ -31,7 +29,7 @@ this 是 JavaScript 中的一个关键字，当一个函数被调用时，除了
 
 当一个函数被赋值给一个对象的一个属性，并使用引用该函数的这个属性进行调用函数时，那么函数就是作为该对象的一个方法进行调用的。看下面的例子：
 
-    var obj = {
+    const obj = {
         func: function() {
             console.log(this === obj); // true
         }
@@ -51,7 +49,7 @@ this 是 JavaScript 中的一个关键字，当一个函数被调用时，除了
             return this;
         }
     }
-    var stu = new Student();
+    const stu = new Student();
     console.log(stu.getContext() === stu); // true
 
 将函数作为构造器调用时，便会通过这个函数生成一个新对象，这时，this 指向这个新创建的对象。
@@ -67,14 +65,14 @@ JavaScript 的每个函数都有 apply() 和 call() 函数，可以利用任何�
 通过 apply() 方法来调用函数，我们要给 apply() 传入两个参数：一个作为函数上下文对象，另一个作为函数参数所组成的数组。call() 方法的使用方式类似，唯一不同的是给函数传入的参数是一个参数列表，而不是单个数组。
 
     function func() {
-        var result = 0;
-        for(var i = 0; i < arguments.length; i++) {
+        const result = 0;
+        for(let i = 0; i < arguments.length; i++) {
             result += arguments[i];
         }
         this.result = result;
     }
-    var obj1 = {};
-    var obj2 = {};
+    const obj1 = {};
+    const obj2 = {};
     func.apply(obj1, [1, 2, 3]);
     func.call(obj2, 4, 5, 6);
 
@@ -92,10 +90,10 @@ JavaScript 的每个函数都有 apply() 和 call() 函数，可以利用任何�
 
 先看下面例子：
 
-    var obj1 = {
+    const obj1 = {
         a: 1
     };
-    var obj2 = {
+    const obj2 = {
         a: 2,
         func: function() {
             console.log(this.a);
@@ -118,8 +116,8 @@ ECMAScript 5 引入了 `Function.prototype.bind`，其会创建一个绑定函�
 
 当调用以上 5 个方法时，传入的参数除了回调函数以外，还可以传入另外一个可选地参数，即函数上下文，代表回调函数中的函数上下文。如果省略该参数，则 callback 被调用时的 this 值，在非严格模式下为全局对象，在严格模式下传入 undefined。看下面的例子：
 
-    var arr = ["segmentfault"];
-    var obj = {};
+    const arr = ["segmentfault"];
+    const obj = {};
     arr.forEach(function(ele, ind) {
         console.log(this === window); // true
     });
@@ -139,7 +137,7 @@ ECMAScript 5 引入了 `Function.prototype.bind`，其会创建一个绑定函�
 
 ### 2、
 
-    var obj = {
+    const obj = {
         someData: "a string"
     };
 
@@ -152,12 +150,12 @@ ECMAScript 5 引入了 `Function.prototype.bind`，其会创建一个绑定函�
 
 ### 3、
 
-    var obj = {
+    const obj = {
         myMethod : function () {
             // this
         }
     };
-    var myFun = obj.myMethod;
+    const myFun = obj.myMethod;
     myFun();
 
 
@@ -166,7 +164,7 @@ ECMAScript 5 引入了 `Function.prototype.bind`，其会创建一个绑定函�
     function myFun() {
         // this
     }
-    var obj = {
+    const obj = {
         someData: "a string"
     };
     myFun.call(obj);
