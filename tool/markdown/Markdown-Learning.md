@@ -275,7 +275,7 @@ Github 比较有意思的是可以支持 emoji。比如 `:smile:` 表示笑脸�
 
 ## 工具
 
-- Windows 环境下，推荐 [Typora](https://www.typora.io/)、[Markdownpad](http://markdownpad.com/)，自带图床功能
+- Windows 环境下，推荐 [Typora](https://www.typora.io/)、[Markdownpad](http://markdownpad.com/)（自带图床功能）
 - Mac 环境下，推荐 Typora、[Mou](http://25.io/mou/)
 - 笔记软件： 为知笔记较好的支持 markdown，且支持 Windows、Mac、web、ios、android 等各个平台
 - 当然，还有 Github
