@@ -18,7 +18,11 @@
 
 ## Markdown
 
+[技术人员的写作利器：Markdown](./tool/markdown/Markdown-Learning.md)
 
+学习了 Markdown 后，就能用它来欢快地写写博客、撸撸文档了。下面会为大家介绍一个叫做 [jekyll](https://jekyllrb.com/) 的技术，用它和 Github，准确讲是 [Github pages](https://pages.github.com/) 来搭建属于自己的博客网站。
+
+[用 jekyll 搭建属于自己的博客网站](./tool/jekyll/jekyll-learning.md)
 
 ## Chrome Dev Tools
 
