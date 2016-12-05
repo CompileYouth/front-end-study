@@ -242,10 +242,12 @@ Markdown 支持以下这些符号前插入 `\` 而显示其本来样子：
 
 Github 支持更简单的 table 语法。
 
-    First Header | Second Header
-    ------------ | -------------
-    Content from cell 1 | Content from cell 2
-    Content in the first column | Content in the second column
+```
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+```
 
 表头与项用一排 `-` 分隔开，每一列用 `|` 分隔开。
 
