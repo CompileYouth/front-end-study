@@ -226,8 +226,48 @@ Markdown 支持以下这些符号前插入 `\` 而显示其本来样子：
 
 ## 拓展
 
-其实，市场上有很多的 Markdown 解释器，它们大都能支持上面所讲的语法，但呈现出的样式往往不一。另外，不同的解释器还能支持其他自己定义的语法，比如 Github 还能支持 emoji。下面再着重介绍 Github 支持的几个 Markdown 语法。
+其实，市场上有很多的 Markdown 解释器，它们大都能支持上面所讲的语法，但呈现出的样式往往不一。另外，不同的解释器还能支持其他自己定义的语法，比如 Github 还能支持 emoji。下面再着重介绍 Github 支持的几个 Markdown 语法。不过需要注意的是，有些语法只能在 issue 或者 pull request 上使用，这个在后面讲每个语法时会标记（约定：“通用”表示在 Github 任何地方可以使用的语法，“特殊”表示只能在 issue 或者 pull request 上使用）。
 
+### 语法高亮(通用)
+上面说过，有的解释器是能够显示语法高亮的，Github 就可以。
+
+### 任务列表（通用）
+
+    - [ ] task one
+    - [x] task two
+
+用法跟普通列表的用法差不多，只不过在每一项文字前面加了 `[ ]` 或者 `[x]`。`[ ]` 中间有且只有一个空格，表示未完成，另一个表示已完成。
+
+### 表格（通用）
+
+Github 支持更简单的 table 语法。
+
+    First Header | Second Header
+    ------------ | -------------
+    Content from cell 1 | Content from cell 2
+    Content in the first column | Content in the second column
+
+表头与项用一排 `-` 分隔开，每一列用 `|` 分隔开。
+
+### SHA 引用（特殊）
+
+每一次 commit 都会产生一个 id，用 `@id` 的方式可以链接到某个项目的特定的 commit。比如用 `jquery/jquery@1b9575b9d14399e9426b9eacdd92b3717846c3f2` 就能链接到 jquery 的一次 commit 记录上。
+
+### issue 引用（特殊）
+
+用 `#1` 来引用当前 repo 的第一个 issue，也可以用 `jquery/jquery#1` 引用 jquery 的第一次 issue。
+
+### @（特殊）
+
+用 `@` 来提醒目标用户。比如 `@CompileYouth` 可以 @ 到我。
+
+### 删除符号（通用）
+
+用连续两个 `~` 包围的词会被加上删除符。比如 `~~This is removed~~`。
+
+### Emoji（通用）
+
+Github 比较有意思的是可以支持 emoji。比如 `:smile:` 表示笑脸等等，具体可以查看 [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
 最后 po 两张 Github 官方推荐的 Markdown Cheat Sheet：[通用语法](./res/github-markdown-cheatsheet0.jpg)，[Github 支持语法](./res/github-markdown-cheatsheet1.jpg)
 
