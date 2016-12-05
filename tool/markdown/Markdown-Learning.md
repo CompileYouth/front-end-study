@@ -284,6 +284,6 @@ Github 比较有意思的是可以支持 emoji。比如 `:smile:` 表示笑脸�
 
 Markdown 文件的编辑在不同编辑器中有不一样的表现，我主要介绍一下在 Atom 中使用 Markdown 的情况。
 
-Atom 官方自带了一个插件，叫 [markdown-preview](https://atom.io/packages/markdown-preview)，可以在 Atom 中进行预览。当然，Atom 还有很多第三方的 MMarkdown 插件，
-我使用的是 [markdown-writer](https://atom.io/packages/markdown-writer)，可以使我更方便地编辑 Markdown 文件，当然你可以根据自己的需要下载插件。
+Atom 官方自带了一个插件，叫 [markdown-preview](https://atom.io/packages/markdown-preview)，可以在 Atom 中进行预览。当然，Atom 还有很多第三方的 Markdown 插件，我使用的是 [markdown-writer](https://atom.io/packages/markdown-writer)，可以使我更方便地编辑 Markdown 文件，当然你可以根据自己的需要下载插件。
+
 在 Atom 中，其他的使用方式就不赘述了，唯一需要提一下的是插入 table。在 Markdown 中插入 table 是一件比较麻烦的事情，而在 Atom 中，可以简化操作，就是直接输入 `table` 然后按 Enter 键，编辑器便会自动生成 table 的模板，比自己手写便捷多了。
