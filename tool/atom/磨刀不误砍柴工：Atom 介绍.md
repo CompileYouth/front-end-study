@@ -65,7 +65,7 @@ nrm use taobao
 
 ![](./res/snippets.png)
 
-比如我经常需要些 ES6 的类，所以我便将 ES6 类做成模板。
+比如我经常需要写 ES6 的类，所以我便将 ES6 类做成模板。
 
 ![](./res/snippet-es6.png)
 
