@@ -269,7 +269,7 @@ Github 支持更简单的 table 语法。
 
 Github 比较有意思的是可以支持 emoji。比如 `:smile:` 表示笑脸等等，具体可以查看 [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
-最后 po 两张 Github 官方推荐的 Markdown Cheat Sheet：[通用语法](./res/github-markdown-cheatsheet0.jpg)，[Github 支持语法](./res/github-markdown-cheatsheet1.jpg)
+详细信息可以查看[官方文档](https://guides.github.com/features/mastering-markdown/)。最后 po 两张 Github 官方推荐的 Markdown Cheat Sheet：[通用语法](./res/github-markdown-cheatsheet0.jpg)，[Github 支持语法](./res/github-markdown-cheatsheet1.jpg)
 
 ## 工具
 
