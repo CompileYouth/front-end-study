@@ -96,6 +96,16 @@ Markdown 支持使用不同数量的 `>` 表示嵌套引用。
 
 也可以用一对三个连续的撇号 `` ` `` 来包裹代码段。
 
+    ```
+    code
+    ```
+
+有的解释器还能根据代码的语言从而给代码加上语法高亮。
+
+    ```javascript
+    function func() {}
+    ```
+
 ### 7、分割线
 
 使用三个及以上的 `*`、 `-` 或 `_`来表示一个分割线，符号不能混用，符号之间可以插入多个空格。需要注意的是，使用 `-` 来插入分割线时需要与上一个段落至少空一行，否则 Markdown 会将上一行文字解释为二级标题。
@@ -214,10 +224,16 @@ Markdown 支持以下这些符号前插入 `\` 而显示其本来样子：
 	!   惊叹号
 ```
 
+## 拓展
+
+其实，市场上有很多的 Markdown 解释器，它们大都能支持上面所讲的语法，但呈现出的样式往往不一。另外，不同的解释器还能支持其他自己定义的语法，比如 Github 还能支持 emoji。下面再着重介绍 Github 支持的几个 Markdown 语法。
+
+
+最后 po 两张 Github 官方推荐的 Markdown Cheat Sheet：[通用语法](./res/github-markdown-cheatsheet0.jpg)，[Github 支持语法](./res/github-markdown-cheatsheet1.jpg)
+
 ## 工具
 
-- Windows 环境下，推荐 [Tyora](https://www.typora.io/)、[Markdownpad](http://markdownpad.com/)，自带图床功能；
-- Mac 环境下，推荐 Typora、Mou；
-- 笔记软件： 为知笔记较好的支持 markdown，且支持 Windows、Mac、web、ios、android 等各个平台。
-
-[原文](https://segmentfault.com/a/1190000003930804)
+- Windows 环境下，推荐 [Typora](https://www.typora.io/)、[Markdownpad](http://markdownpad.com/)，自带图床功能
+- Mac 环境下，推荐 Typora、Mou
+- 笔记软件： 为知笔记较好的支持 markdown，且支持 Windows、Mac、web、ios、android 等各个平台
+- 当然，还有 Github
