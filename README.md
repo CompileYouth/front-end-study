@@ -24,7 +24,11 @@
 
 [用 jekyll 搭建属于自己的博客网站](./tool/jekyll/jekyll-learning.md)
 
-## Chrome Dev Tools
+## Chrome DevTools
+
+因为项目要求的缘故，我们的项目只需要在最新的 Chrome 上运行稳定即可，所以我们一般情况下都在 Chrome 中进行开发。下面就聊聊我是如何使用 Chrome DevTools 的。
+
+[认识 Chrome DevTools]()
 
 ### console 对象在 Chrome 中
 
