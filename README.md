@@ -28,7 +28,7 @@
 
 因为项目要求的缘故，我们的项目只需要在最新的 Chrome 上运行稳定即可，所以我们一般情况下都在 Chrome 中进行开发。下面就聊聊我是如何使用 Chrome DevTools 的。
 
-[认识 Chrome DevTools]()
+[认识 Chrome DevTools](./tool/devtools/Chrome DevTools Overview.md)
 
 ### console 对象在 Chrome 中
 
