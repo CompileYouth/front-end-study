@@ -47,7 +47,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 
 细心的同学一定发现了我们现在使用的 Chrome 上面没有 Performance 和 Memory，而是 Timeline 和 Profiles，是不是我写错了呢？不是的，而是 Chrome 到 v57 后，便将 Timeline 更名为 Performance，将 Profiles 更名为 Memory。目前来看，Google 仅仅是更名以及调整了部分功能所属的面板而已，并没有功能上的增删，这个会在下面介绍各个面板时详细介绍。
 
-除了 9 个功能面板，工具栏还有 3 个选项，分别是左侧的 ![](./res/toolbar-1.png)、![](./res/toolbar-2.png) 和右侧的 ![](./res/toolbar-3.png) ，分别表示检查元素、设备切换以及 DevTools 的定制化面板。检查元素后面在介绍 Elements 时会提到；设备切换是我们比较常用的功能，能够将你的浏览器模拟成一个带触屏功能的移动设备；DevTools 定制化面板是对 DevTools 本身的定制与控制。
+除了 9 个功能面板，工具栏还有 3 个选项，分别是左侧的 ![](./res/toolbar-1.png)、![](./res/toolbar-2.png) 和右侧的 ![](./res/toolbar-3.png) ，分别表示检查元素、设备切换以及 DevTools 的定制化面板。检查元素后面在介绍 Elements 时会提到；设备切换是我们比较常用的功能，能够将你的浏览器模拟成一个带触屏功能的移动设备；DevTools 定制化面板是对 DevTools 本身的定制与控制。下面着重介绍下“切换设备”这一功能。
 
 ### 切换设备
 
@@ -60,7 +60,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 点击第一个下拉框，出现： ![](./res/device-2.png)，你们会发现有几条分割线，先说浏览器默认的，有两条分割线，将所有选项分成 3 个部分，分别是
 
 - Responsive，代表响应式，即你可以随意的拖动改变网页的宽高
-- 常见移动设备，比如 Galaxy S5 / iPhone 6 / iPad 等，选择一项后，就能将浏览器模拟成那个设备的大小
+- 常见移动设备，比如 Galaxy S5 / iPhone 6 / iPad 等，选择一项后，就能将浏览器模拟成那个设备的大小、User Agent 等行为
 - edit，编辑，选中之后出现如下界面：
     ![](./res/device-3.png)
 
@@ -68,7 +68,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 
     ![](./res/device-edit.png)
 
-    分别输入设备名称、设备宽高、[DPR（每英寸点数，默认是 1，可不填）](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports#device_pixel_ratio_dpr)、[User-agent（用户代理，可不填）](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports#user_agent_type)，选择屏幕类型，最后点击 "Add"，便可以将你的设备加到设备列表里了。这里再多说一下屏幕类型：
+    分别输入设备名称、设备宽高、[DPR（默认是 1，可不填）](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports#device_pixel_ratio_dpr)、[User-agent（用户代理，可不填）](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports#user_agent_type)，选择屏幕类型，最后点击 "Add"，便可以将你的设备加到设备列表里了。这里再多说一下屏幕类型：
 
     - Mobile：可触屏的移动设备，鼠标指针是粗黑的点，代表手指与屏幕的触点
     - Mobile(no touch)：不可触屏的移动设备
