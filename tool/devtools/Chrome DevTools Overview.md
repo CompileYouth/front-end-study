@@ -1,4 +1,4 @@
-Chrome DevTools（Chrome 开发者工具） 是内嵌在 Chrome 浏览器里的一组用于网页制作和调试的工具。官网还推荐一款叫做 [Chrome 金丝雀版本（Chrome Canary）](https://www.google.com/intl/en/chrome/browser/canary.html)的 Chrome 浏览器，从这里你可以获得最新版本的 DevTools。为什么 Google 称之为金丝雀呢，因为金丝雀早期在矿井中被用来预警，而该版本的 Chrome 一定程度上也能起到该作用。不用担心 Chrome Canary 会覆盖原本的 Chrome，从 Logo 就可以看出这是两个软件。本文的实操性很强，建议大家在阅读时进行尝试，以加深印象。
+Chrome DevTools（Chrome 开发者工具） 是内嵌在 Chrome 浏览器里的一组用于网页制作和调试的工具。官网还推荐一款叫做 [Chrome 金丝雀版本（Chrome Canary）](https://www.google.com/intl/en/chrome/browser/canary.html)的 Chrome 浏览器，从这里你可以获得最新版本的 DevTools。为什么 Google 称之为金丝雀呢，因为金丝雀早期在矿井中被用来预警，而该版本的 Chrome 一定程度上也能起到该作用。不用担心 Chrome Canary 会覆盖原本的 Chrome，从 Logo 就可以看出这是两个软件。本文的实操性很强，建议大家在阅读时进行尝试，以加深印象。另外，需要注意一下的是，本文不是对 [DevTools 官方文档](https://developer.chrome.com/devtools)的翻译，只是对我们实际使用中经常使用到的有用的功能进行描述。
 
 ![](./res/chrome.png)
 
@@ -55,7 +55,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 
 ![](./res/device-1.png)
 
-上面有 4 个部分组成，第一个是设置设备类型，第二个代表下面网页的宽和高，第三个代表缩放比例，第四个代表旋转设备。我们着重看第一个。
+上面有 4 个部分组成，第一个是设置设备类型，第二个代表下面网页的宽和高，第三个代表缩放比例，第四个代表旋转设备甚至选择设备的状态（需要设备支持，比如选择Nexus 5X 时）。我们着重看第一个。
 
 点击第一个下拉框，出现： ![](./res/device-2.png)，你们会发现有几条分割线，先说浏览器默认的，有两条分割线，将所有选项分成 3 个部分，分别是
 
@@ -68,7 +68,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 
     ![](./res/device-edit.png)
 
-    分别输入设备名称、设备宽高、[DPI（每英寸点数，默认是 1，可不填）](https://zh.wikipedia.org/wiki/每英寸点数)、[User-agent（用户代理，可不填）](https://zh.wikipedia.org/wiki/用户代理)，选择屏幕类型，最后点击 "Add"，便可以将你的设备加到设备列表里了。这里再多说一下屏幕类型：
+    分别输入设备名称、设备宽高、[DPR（每英寸点数，默认是 1，可不填）](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports#device_pixel_ratio_dpr)、[User-agent（用户代理，可不填）](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports#user_agent_type)，选择屏幕类型，最后点击 "Add"，便可以将你的设备加到设备列表里了。这里再多说一下屏幕类型：
 
     - Mobile：可触屏的移动设备，鼠标指针是粗黑的点，代表手指与屏幕的触点
     - Mobile(no touch)：不可触屏的移动设备
@@ -79,11 +79,11 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 
 当你将你自定义的设备添加进设备列表时，DevTools 会自动选中，从而可以在下拉框中看到第四部分：
 
-- 自己定义的设备
+- 自定义的设备
 
 那我的设备举例： ![](./res/device-2.png)，我一般不怎么用到移动设备，所以我就保留了一个 iPhone 6，另外我还需要一个 1920 * 1080 的高清屏，所以我以 HD 命名，定义了一个 1920 * 1080 的设备。
 
-上面大概介绍了 DevTools 的几个面板和另外 3 个功能选项的作用，下面我们一起来看一下如何使用每一个面板。
+上面大概介绍了 DevTools 的几个面板和另外 3 个功能选项的作用，着重介绍了切换设备的功能，下面我们一起来看一下如何使用每一个面板。
 
 ## 详细介绍
 
