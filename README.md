@@ -48,8 +48,6 @@
 
 [Chrome DevTools - Audits](./tool/devtools/Audits.md)
 
-### console 对象在 Chrome 中
-
 # HTML 篇
 
 ## HTML 基础知识
