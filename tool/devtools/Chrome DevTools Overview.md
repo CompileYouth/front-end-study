@@ -68,3 +68,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 ## Network
 
 [Network](./Network.md)
+
+## Performance
+
+[Performance](./Performance.md)
