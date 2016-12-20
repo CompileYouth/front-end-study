@@ -30,6 +30,24 @@
 
 [认识 Chrome DevTools](./tool/devtools/Chrome DevTools Overview.md)
 
+[Chrome DevTools - Elements](./tool/devtools/Elements.md)
+
+[Chrome DevTools - Console](./tool/devtools/Console.md)
+
+[Chrome DevTools - Sources](./tool/devtools/Sources.md)
+
+[Chrome DevTools - Network](./tool/devtools/Network.md)
+
+[Chrome DevTools - Performance](./tool/devtools/Performance.md)
+
+[Chrome DevTools - Memory](./tool/devtools/Memory.md)
+
+[Chrome DevTools - Application](./tool/devtools/Application.md)
+
+[Chrome DevTools - Security](./tool/devtools/Security.md)
+
+[Chrome DevTools - Audits](./tool/devtools/Audits.md)
+
 ### console 对象在 Chrome 中
 
 # HTML 篇
