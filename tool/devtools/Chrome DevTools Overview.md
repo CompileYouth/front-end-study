@@ -46,3 +46,13 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 - Audits：审计面板会对页面的加载进行分析，然后给出提高页面性能的建议，官网建议查看 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 来获得更多的页面加载建议。
 
 细心的同学一定发现了我们现在使用的 Chrome 上面没有 Performance 和 Memory，而是 Timeline 和 Profiles，是不是我写错了呢？不是的，而是 Chrome 到 v57 后，便将 Timeline 更名为 Performance，将 Profiles 更名为 Memory。目前来看，Google 仅仅是更名以及调整了部分功能所属的面板而已，并没有功能上的增删，这个会在下面介绍各个面板时详细介绍。
+
+上面大概介绍了 DevTools 的几个面板的作用，下面我们一起来看一下如何使用每一个面板。
+
+## 详细介绍
+
+下面的例子均拿 [Github](https://github.com/)进行举例。
+
+### Elements
+
+[Elements](./Elements.md)
