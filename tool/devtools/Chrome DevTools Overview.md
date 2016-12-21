@@ -87,7 +87,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 
 ## 详细介绍
 
-下面的例子均拿 [Github](https://github.com/) 进行举例。
+下面的例子没有特殊说明均拿 [Github](https://github.com/) 进行举例。
 
 ### Elements
 
