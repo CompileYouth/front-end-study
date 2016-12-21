@@ -117,4 +117,4 @@ Computed 面板显示了如下内容：
 
 - Ancestors：禁止则只显示直接定义在所选元素上的事件监听，在我这个例子中结果如图： ![](./res/element-event-3.png)，这表明直接定在提问按钮上的事件只有 click，且定义的事件处理函数只有两个
 - 监听器类型：Passive / Blocking / All：Passive Event Listener  是从 Chrome 51 开始添加的一个新特性，主要用来让页面滑动更加流畅，详细信息请查看另一篇博客：[Passive Event Listener](../../js/event/Passive Event Listener.md)
-- Framework listeners：
+- Framework listeners：很多框架、类库都封装了原生的事件，禁止 Framework listeners 可以查看事件在框架或类库的代码下的实现，而允许 Framework listeners 则可以深入框架或类库内部查看事件定义的代码
