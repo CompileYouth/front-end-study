@@ -37,6 +37,25 @@ Elements 面板主要用于对页面 HTML 和 CSS 的检查以及可视化编辑
 - Collapse all：收缩所选节点下的所有子节点，包括自己
 - 4 个伪类：选中则表示所选节点处于相应的状态，比如选中 `:hover` 则表示所选节点当前正处于鼠标悬停的状态
 - Scroll into View：如果所选的 DOM 节点对应的页面元素不在可视区域内的话，点击这个选项则会将页面滚动到可以显示对应的页面元素的位置
+- Break on：给 DOM 节点设置断点，主要用来调试 JavaScript 代码，这段代码的作用是用来修改所加断点的 DOM 节点，这一般用在比较复杂的网页应用当中。可以给所选的 DOM 节点添加 3 种类型的断点：
+    - subtree modifications：所选节点的子节点被添加、删除、移动的话，则会触发
+    - attribute modifications：所选节点的属性被修改的话，则会触发
+    - node removal：所选节点被删除的话，则会触发
+
+    这 3 种断点可以同时作用在一个节点上。为了便于大家理解，我们举个例子。拿 jQuery 官网举例（主要在 Console 里可以使用 jQuery）：
+    我给 header 节点加一个 "attribute modifications" 的断点，如下图所示：
+
+    ![](./res/element-break-point-1.png)
+
+    我在 Console 中输入这一句代码并回车：
+
+    ```javascript
+    $("header").attr("id", "my-header")
+    ```
+
+    你会发现页面处于 debug 模式，并且代码会跳转到修改选中节点属性的 JavaScript 代码那里：
+
+    ![](./res/element-break-point-2.png)
 
 
 ## 样式
