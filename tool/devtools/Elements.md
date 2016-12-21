@@ -69,7 +69,7 @@ Elements 面板主要用于对页面 HTML 和 CSS 的检查以及可视化编辑
 
 - Style：实时编辑与所选元素相关的样式
 - Computed：检查编辑所选元素的盒模型
-- Event Listeners
+- Event Listeners：查看与所选元素相关的 JS 事件监听
 - DOM Breakpoints
 - Properties
 
@@ -94,3 +94,27 @@ Styles 面板可以允许你通过各种方式来修改元素的样式，并且�
 
 
 对样式进行了修改之后，如果你想保存这些修改，你可以参考[这篇文档](https://developers.google.com/web/tools/setup/setup-workflow)。现在的 CSS 文件基本上都是编译后的结果，而保存的文件一般也是编译后的 CSS 文件，所以这么做的作用不大（如果有可以直接保存原始样式文件的方法，大家可以留言）。所以我们一般将 Styles 面板当做一个所见即所得的调试工具。
+
+### Computed
+
+![](./res/element-computed-1.png)
+
+Computed 面板显示了如下内容：
+
+- 所选元素的盒模型
+- 所选元素的 CSS 样式以及值，不仅显示最终所采用的值，也显示被覆盖了的值
+- 每个属性值所在的文件
+
+鼠标悬停在盒模型上的 margin、border、padding 以及内容区域，可以在网页中看到与之相对应的区域。你还可以双击盒模型上的数字来修改它。如果所选元素的 position 属性的值为 absolute 或者 fixed 的话，还可以在 margin 的外围设置 position。
+
+### Event Listeners
+
+![](./res/element-event-1.png)
+
+上图截取的是知乎首页顶部的“提问”按钮对应的 `<button class=...>提问</button>`。Event Listeners 面板显示了这个节点注册的所有事件类型，展开一个事件类型（这里是 click），可以看到这个类型下的所有处理函数。
+
+在面板的顶部有一排选项： ![](./res/element-event-2.png)。
+
+- Ancestors：禁止则只显示直接定义在所选元素上的事件监听，在我这个例子中结果如图： ![](./res/element-event-3.png)，这表明直接定在提问按钮上的事件只有 click，且定义的事件处理函数只有两个
+- 监听器类型：Passive / Blocking / All：Passive Event Listener  是从 Chrome 51 开始添加的一个新特性，主要用来让页面滑动更加流畅，详细信息请查看另一篇博客：[Passive Event Listener](../../js/event/Passive Event Listener.md)
+- Framework listeners：
