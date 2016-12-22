@@ -70,8 +70,8 @@ Elements 面板主要用于对页面 HTML 和 CSS 的检查以及可视化编辑
 - Style：实时编辑与所选元素相关的样式
 - Computed：检查编辑所选元素的盒模型
 - Event Listeners：查看与所选元素相关的 JS 事件监听
-- DOM Breakpoints
-- Properties
+- DOM Breakpoints: DOM 断点
+- Properties：所选节点对应的对象及父类们
 
 ### Styles
 
@@ -118,3 +118,23 @@ Computed 面板显示了如下内容：
 - Ancestors：禁止则只显示直接定义在所选元素上的事件监听，在我这个例子中结果如图： ![](./res/element-event-3.png)，这表明直接定在提问按钮上的事件只有 click，且定义的事件处理函数只有两个
 - 监听器类型：Passive / Blocking / All：Passive Event Listener  是从 Chrome 51 开始添加的一个新特性，主要用来让页面滑动更加流畅，详细信息请查看另一篇博客：[Passive Event Listener](../../js/event/Passive Event Listener.md)
 - Framework listeners：很多框架、类库都封装了原生的事件，禁止 Framework listeners 可以查看事件在框架或类库的代码下的实现，而允许 Framework listeners 则可以深入框架或类库内部查看事件定义的代码
+
+### DOM Breakpoints
+
+我给 Github 的表示 head 的块添加了 3 个 DOM 断点：
+
+![](./res/element-breakpoint-1.png)
+
+当把鼠标悬停在节点标识符上时可以在网页相应区域显示对应的页面元素，勾选前面的复选框代表断点有效，不勾选代表断点虽然存在，但无法使用。
+
+### Properties
+
+![](./res/element-properties-1.png)
+
+这是所选 DOM 节点对应的对象以及这个对象的父类、父类的父类...的集合。
+
+说到这个，给大家看个好玩的：
+
+![](./res/element-properties-2.png)
+
+我在 Console 中获取的是同样的一个元素，为什么一个展开是个 HTML 的结构，而下面展开的是个对象的形式呢？而且你们用 jQuery 甚至原生 JS 写了那么多操作文档的代码，有没有想过 HTML 跟 DOM 到底什么关系？感觉又可以写一篇文章了。
