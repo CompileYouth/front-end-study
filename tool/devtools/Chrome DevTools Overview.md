@@ -95,7 +95,7 @@ DevTools 是很多功能的集合，而在窗口顶部的工具栏是对这些�
 
 ### Console
 
-[Console（待写）](./Console.md)
+[Console](./Console.md)
 
 ### Sources
 
