@@ -128,3 +128,15 @@ $0， $1...$4，代表 5 个最近访问过的 DOM 或者堆对象（Heap Object
 `$_` 返回上一次表达式执行的结果。举个栗子：
 
 ![](./res/console-7.png)
+
+### Event
+
+在 Chrome DevTools 里你可以给 DOM 绑定事件、解绑事件，也能查看 DOM 注册了哪些事件
+
+- `monitorEvents(DOM_element, event)`，如果 event 为空的话，那会给选定的 DOM 元素加上所有事件
+- `unmonitorEvents(DOM_element)`，为某个 DOM 元素解绑事件
+- `getEventListeners(DOM_element)`，查看某个 DOM 元素绑定了哪些事件
+
+![](./res/console-10.png)
+
+上面的例子中，我为 Github 的 header 注册了一个 click 事件，最后又解绑了事件。
