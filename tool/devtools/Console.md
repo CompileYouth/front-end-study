@@ -76,3 +76,17 @@ Chrome DevTools 的 Console 主要提供两类功能：
 当然你还可以按住 Ctrl / Cmd 的同时，多选不同 console 类型的输出。
 
 如果你不清楚上面一堆 console 方法，那么你可以参考我的另一篇博客：[JavaScript 中的 console](../../js/console/JavaScript 中的 console.md)
+
+### 执行环境
+
+除了当前的页面的执行环境，其他的框架、拓展都有其自己的执行环境。什么意思？举例子来说吧。利用 Chrome 浏览器打开一个 Google 首页，你会发现默认的执行环境是 "top"，点击下拉框，你会发现还有其他选项，我们暂时就保持默认的 top 即可。在 Console 中输入 `document.body`，回车，再将执行环境切换成 "iframe"，再输入 `document.body`，回车，执行结果如下：
+
+![](./res/console-6.png)
+
+你会发现，同样的命令，返回不一样的结果，原因就是执行环境发生了改变。
+
+不过，我们一般极少用到这个功能，所以在这里不做多详细说明。
+
+### Preserve log
+
+默认是不勾选的，所以当刷新页面时，Console 中的信息会被清空掉。如果勾选了的话，那么刷新页面之后，信息还会被保留。
