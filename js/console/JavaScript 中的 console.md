@@ -44,7 +44,7 @@
 
 代码片段 1 显示，`console.log()` 的参数可以有多个，输出的结果以一个空格隔开。
 
-代码片段 2 显示，`console.log()` 可以使用 C 语言 `printf()` 风格的占位符，不过其支持的占位符种类较少，只支持字符串（%s）、整数（%d或%i）、浮点数（%f）和对象（%o）。
+代码片段 2 显示，`console.log()` 可以使用 C 语言 `printf()` 风格的占位符，不过其支持的占位符种类较少，只支持字符串（%s）、整数（%d或%i）、浮点数（%f）和对象（%O）、DOM 节点（%o）和 应用 CSS 规则（%c）。
 
 
 ## console.debug()、 console.info()、 console.warn() 与 console.error()
