@@ -41,7 +41,10 @@ Chrome DevTools 的 Console 主要提供两类功能：
 首先需要说明一下的是，过滤的对象是输出的内容，即不会对输入的命令进行过滤。下面对几个过滤条件简单说明下：
 
 - Hide network：默认的，Console 会报告网络问题，勾选这个功能就能过滤网络报告信息
-- Hide violations
+- Hide violations：violations 是最新的 DevTools 新加的一个功能，意在显示那些阻塞 UI 的长时间任务。举个例子：
+
+    ![](./res/console-9.png)
+
 - Error：只显示由 `console.error()` 输出的结果
 - Warning：只显示由 `console.warn()` 输出的结果
 - Info：只显示由 `console.info()` 输出的结果
@@ -90,3 +93,38 @@ Chrome DevTools 的 Console 主要提供两类功能：
 ### Preserve log
 
 默认是不勾选的，所以当刷新页面时，Console 中的信息会被清空掉。如果勾选了的话，那么刷新页面之后，信息还会被保留。
+
+## Console 能干什么事
+
+### 执行表达式
+
+你可以输入任何表达式，按回车执行。在输入过程中，可能会出现智能提醒，你可以按 tab 或者 → 键来完成自动补全。另外，还可以按 ↑ 和 ↓ 键来翻阅历史表达式
+
+
+## Chrome DevTools 自带了哪些有用的表达式
+
+下面描述的都是 Chrome DevTools 自带的方法或者变量，需要注意一下的是，当页面暴露相同的方法或变量的话，DevTools 自带的会被覆盖，比如 jQuery 官网下的 Console 中的 $() 就是自己的方法。
+
+### 选择元素
+
+- $()：是 `document.querySelector()` 的缩写
+- $$()：是 `document.querySelectorAll()` 的缩写
+- $x()：通过 XPath 的方式查看元素，注意是 "XPath" 中的 "x"，而不是 `+-*/` 中的 `*`
+
+### inspect
+
+在 Console 中输入 `inspect()` 参数是 DOM 元素或者 JS 引用，可以跳转到 Elements 面板并且定位到你选择的那个 DOM 节点那。
+
+### $0-4
+
+$0， $1...$4，代表 5 个最近访问过的 DOM 或者堆对象（Heap Object），$0 是最近访问的。那访问的意思是什么？就是在 Elements 面板被审查或者在 Memory 面板被选择的 DOM 元素或者堆对象。
+
+![](./res/console-8.png)
+
+上面的例子中，我最后一次审查（点击）了 `<div class="header">***</div>` 的节点，所以 $0 就输出了这个节点。
+
+### $_
+
+`$_` 返回上一次表达式执行的结果。举个栗子：
+
+![](./res/console-7.png)
