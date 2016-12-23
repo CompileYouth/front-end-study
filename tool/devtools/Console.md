@@ -32,7 +32,7 @@ Chrome DevTools 的 Console 主要提供两类功能：
 
 ### 清空
 
-这个很好理解，就是让你的 Console 面板变得干净。但需要注意的是，这个清空并不是真正意义的清空，你还可以按向上向下的按键查看在 Console 中输入的历史。另外，还有很多种清空 Console 的办法，键盘党可以用 `Ctrl + L / Cmd + K`（Mac 都支持） 来实现。
+这个很好理解，就是让你的 Console 面板变得干净。但需要注意的是，这个清空并不是真正意义的清空，你还可以按向上向下的按键查看在 Console 中输入的历史。另外，还有很多种清空 Console 的办法，键盘党可以用 `Ctrl + L / Cmd + K`（Mac 都支持） 来实现。当然还有一些其他方法，我觉得比前面提到的都要麻烦，就不赘述了。
 
 ### 过滤
 
@@ -133,10 +133,32 @@ $0， $1...$4，代表 5 个最近访问过的 DOM 或者堆对象（Heap Object
 
 在 Chrome DevTools 里你可以给 DOM 绑定事件、解绑事件，也能查看 DOM 注册了哪些事件
 
-- `monitorEvents(DOM_element, event)`，如果 event 为空的话，那会给选定的 DOM 元素加上所有事件
+- `monitorEvents(DOM_element, event)`，如果 event 为空的话，那会给选定的 DOM 元素加上所有事件；如果想监听多个事件的话，event 还可以是 Array 类型的变量
 - `unmonitorEvents(DOM_element)`，为某个 DOM 元素解绑事件
 - `getEventListeners(DOM_element)`，查看某个 DOM 元素绑定了哪些事件
 
 ![](./res/console-10.png)
 
 上面的例子中，我为 Github 的 header 注册了一个 click 事件，最后又解绑了事件。
+
+### debug(function) 与 undebug(function)
+
+在 Console 中调用 debug() 方法，当调用这个方法的时候，就会开启 debug 模式。用 undebug 方法来关闭。
+
+### monitor(function) 与 unmonitor(function)
+
+当调用某个 function 时，Console 会输出这个 function 的名字和参数。
+
+### dir(object) 与 dirxml(object)
+
+dir() 与 console.dir() 一样，dirxml() 与 console.dirxml() 一样。
+
+dir() 将选中元素以对象的形式输出，而 dirxml() 将元素以 xml 的形式输出。
+
+### table(object)
+
+与 console.table() 一样。
+
+### values() 与 keys()
+
+与 ES6 中的用法一样。
