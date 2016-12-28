@@ -80,3 +80,5 @@
 查看 DOM 断点的详细信息请查看另一篇博客：[Elements](./Elements.md)
 
 **面板介绍 -- XHR Breakpoints**
+
+XHR 断点跟 DOM 断点很类似，通过 XHR 断点可以很容易的找到 ajax 调用的触发点和调用堆栈。最新的 Chrome DevTools 中要么为所有 ajax 调用添加断点，要么都不添加断点。
