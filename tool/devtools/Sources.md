@@ -82,3 +82,13 @@
 **面板介绍 -- XHR Breakpoints**
 
 XHR 断点跟 DOM 断点很类似，通过 XHR 断点可以很容易的找到 ajax 调用的触发点和调用堆栈。最新的 Chrome DevTools 中要么为所有 ajax 调用添加断点，要么都不添加断点。
+
+![](./res/sources-debug-4.png)
+
+**面板介绍 -- Event Listener Breakpoints**
+
+展开 Event Listener Breakpoints 可以看到一组事件类型，展开一个事件类型可以看到具体的事件名称。
+
+![](./res/sources-debug-5.png)
+
+每个事件名称和事件类型前面都有个复选框，选中即指当页面中触发了所选的事件的话，就会触发中断。
