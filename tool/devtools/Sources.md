@@ -20,7 +20,7 @@
 
 右侧的面板为上下结构，上面是一组功能按钮，下面由很多面板组成，这些面板中，看名字大概能知道第二个显示的是调用栈，从四个开始就是各种类型的断点。那真相是什么呢？我们下面结合调试实例来解释这些按钮/面板的功能。
 
-## 调试技巧
+## 添加断点与断点类型
 
 本文用到的测试代码为自己所写。
 
@@ -60,7 +60,7 @@
 
 我们写项目时，很多时候是要引用第三方库或框架的，当我们调试时，调试的对象应该是我们自己写的代码，但很多时候，我们经常在焦灼地进行下一步下一步时，突然代码跳到了第三方库或框架的源码上去，这让我们焦灼的内心更添了一把柴火。黑盒脚本就是用来解决这个问题的。它能够将一个脚本文件标记为 "Blackbox Script"，那么我们就**永远**不可能进入这个文件内部，这个文件对我们来讲就是一个黑盒子。为什么要强调“永远”呢？因为不仅普通的断点不能访问这个被标记了的脚本，其他的，比如说 DOM 断点、事件断点等等都无法访问那个脚本文件内部。
 
-**面板介绍 -- Breakpoints**
+### 面板介绍 -- Breakpoints
 
 ![](./res/sources-debug-2.png)
 
@@ -71,7 +71,9 @@
 - Disable all Breakpoints：功能同上（有点匪夷所思）
 - Remove all Breakpoints：删除所有断点
 
-**面板介绍 -- DOM Breakpoints**
+除了普通的中断类型，我们下面再介绍几款其他类型的。
+
+### 面板介绍 -- DOM Breakpoints
 
 在 Elements 面板，右键 body 元素，插入 "attribute modifications breakpoint"，在 Sources 面板中显示如下：
 
@@ -79,16 +81,77 @@
 
 查看 DOM 断点的详细信息请查看另一篇博客：[Elements](./Elements.md)
 
-**面板介绍 -- XHR Breakpoints**
+### 面板介绍 -- XHR Breakpoints
 
 XHR 断点跟 DOM 断点很类似，通过 XHR 断点可以很容易的找到 ajax 调用的触发点和调用堆栈。最新的 Chrome DevTools 中要么为所有 ajax 调用添加断点，要么都不添加断点。
 
 ![](./res/sources-debug-4.png)
 
-**面板介绍 -- Event Listener Breakpoints**
+### 面板介绍 -- Event Listener Breakpoints
 
 展开 Event Listener Breakpoints 可以看到一组事件类型，展开一个事件类型可以看到具体的事件名称。
 
 ![](./res/sources-debug-5.png)
 
 每个事件名称和事件类型前面都有个复选框，选中即指当页面中触发了所选的事件的话，就会触发中断。
+
+### 异常中断
+
+这个跟上面几种不一样，这个是放在功能按钮组里面的。
+
+![](./res/sources-debug-6.png)
+
+选中 "Pause on exceptions" 按钮，如上图，当执行的脚本出现异常时会触发中断。
+
+介绍了如何添加断点方式以及几款中断类型，下面介绍一下如何利用断点进行调试。
+
+## 断点调试
+
+我要借助一段代码来说明。
+
+``` html
+// test.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Debug</title>
+</head>
+<body>
+    <script src="script.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        function main() {
+            minus(3, 1);
+
+            let result = div(1, 2);
+            console.log(result);
+
+            result = findMax(1, 2);
+            console.log(result);
+
+            div(1, 0);
+        }
+
+        function div(a, b) {
+            if (b === 0) {
+                throw new Error(`"b" can't be 0`);
+            }
+
+            return a / b;
+        }
+
+        function findMax(a, b) {
+            if (a > b) {
+                return a;
+            }
+
+            return b;
+        }
+    </script>
+</body>
+</html>
+
+// script.js
+function minus(a, b) {
+    return a - b;
+}
+```
