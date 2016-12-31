@@ -67,8 +67,8 @@
 这个面板会显示你所有的通过行号留下的断点。你可以右键管理某个或全部断点：
 
 - Remove Breakpoints：删除选中的断点
-- Activate Breakpoints：暂时忽略所有断点
-- Disable all Breakpoints：功能同上（有点匪夷所思）
+- Deactivate Breakpoints：暂时忽略所有断点
+- Disable all Breakpoints：功能同上（与上一功能有细微差别，但表现类似）
 - Remove all Breakpoints：删除所有断点
 
 除了普通的中断类型，我们下面再介绍几款其他类型的。
@@ -107,51 +107,23 @@ XHR 断点跟 DOM 断点很类似，通过 XHR 断点可以很容易的找到 aj
 
 ## 断点调试
 
-我要借助一段代码来说明。
+### 功能按钮
 
-``` html
-// test.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Debug</title>
-</head>
-<body>
-    <script src="script.js" charset="utf-8"></script>
-    <script type="text/javascript">
-        function main() {
-            minus(3, 1);
+我们先来介绍几个功能按钮：
 
-            let result = div(1, 2);
-            console.log(result);
+![](./res/sources-debug-7.png)
 
-            result = findMax(1, 2);
-            console.log(result);
+- ![](./res/sources-debug-btn-1.png)：当程序中断在断点处时，点击去往下一个断点
+- ![](./res/sources-debug-btn-2.png)：当程序中断在断点处时，长按上面的按钮出现，点击这个按钮可以在 0.5s 内忽略任何中断，当中断出现在循环内部时一般比较有用
+- ![](./res/sources-debug-btn-3.png)：执行下一条语句
+- ![](./res/sources-debug-btn-4.png)：当中断停留在一个函数调用处时，点击这个按钮会进入函数内部，而上面的按钮则会执行函数调用的下一句，不会进入函数内部
+- ![](./res/sources-debug-btn-5.png)：当中断停留在函数内部时，点击这个按钮则会跳出函数内部，停留在函数调用的下一个语句
+- ![](./res/sources-debug-btn-6.png)：在不取消断点标记的情况下，使得所有断点失效
 
-            div(1, 0);
-        }
+### 面板介绍 -- Scope
 
-        function div(a, b) {
-            if (b === 0) {
-                throw new Error(`"b" can't be 0`);
-            }
+![](./res/sources-debug-8.png)
 
-            return a / b;
-        }
+Scope 面板显示了你当前定义的所有属性的值，例子如上图。除了 Scope 面板，你还可以在左侧的代码区域，中断的旁边看到语句中包含的变量的值。除此以外，你还可以把鼠标放在变量上面，也显示对应变量的值。
 
-        function findMax(a, b) {
-            if (a > b) {
-                return a;
-            }
-
-            return b;
-        }
-    </script>
-</body>
-</html>
-
-// script.js
-function minus(a, b) {
-    return a - b;
-}
-```
+Scope 会显示三种类型的值： Local、Closure 和 Global。
