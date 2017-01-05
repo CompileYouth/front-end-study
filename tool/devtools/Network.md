@@ -3,3 +3,7 @@ Chrome DevTools 的 Network 面板主要用于度量当前网页的网络性能�
 先看 Network 面板长啥样~下面是我 Github 首页的 Network 面板。
 
 ![](./res/network-1.png)
+
+Network 面板包含很多小面板，有些是默认隐藏的。其中最主要的一个面板就是控制面板(Control Pane)，即上图中的 "1" 部分，控制面板上有很多的功能按钮。"2" 部分是请求表格(Requests Table)，表格内容按照请求的顺序排序，点击一个请求的 "Name" 列可以查看这个请求的具体信息；在表格的头部，右键可以看到还有很多隐藏的列，比如 Method、Protocol、Domain 等等。"3" 部分是概览(Summary)，主要显示这个网页有多少请求，请求的数据有多大，一共花费了多少时间。
+
+上面是 Network 3 个面板的大概了解，下面就对面板 "1"、"2" 进行重点介绍。
