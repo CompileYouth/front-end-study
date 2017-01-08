@@ -96,3 +96,12 @@ Network 面板包含很多小面板，有些是默认隐藏的。其中最主要
 ### Offline
 
 勾选代表：使得网页处于离线状态。
+
+### 模拟网络状况
+
+当开发的是一款移动应用时，常常要考虑移动设备的网络状况。Chrome DevTools 可以模拟各种各样的网络状况。上面的 Offline 仅仅是一种情况。点击 Offline 后面的下拉框，可以发现 Chrome 自带了很多网络状况，比如 4G、3G 甚至 Offline 等等。默认的是反应真实的网络条件（自己当前的网络状况），即 No throttling。Throttle 这个词很形象，阀门，可以用它来调节流量的速度。除此以外，你还可以自定义网络状况。
+
+除了在 Network 面板可以设置网络状况，还可以在 Drawer 中看见。具体有两种方法：
+
+1. ![](./res/toolbar-3.png) -> More tools -> Network conditions
+2. 按 esc 键调出 Console Drawer，在 Console Tab 旁边也有 ![](./res/toolbar-3.png)，点击，选择 Network conditions
