@@ -48,6 +48,12 @@
 
 [Chrome DevTools - Audits](./tool/devtools/Audits.md)
 
+## Chrome extensions/apps
+
+既然用 Chrome， 为什么不让 Chrome extensions/apps 让你的 Chrome 更加强大呢？
+
+[推荐给开发者的 Chrome extensions/apps](./tool/chrome-extension/extensions-and-apps.md)
+
 # HTML 篇
 
 ## HTML 基础知识
