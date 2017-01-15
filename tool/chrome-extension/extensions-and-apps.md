@@ -84,6 +84,12 @@
 
 ![](./res/Usersnap.jpg)
 
+### [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
+
+一键识别网页中用到了哪些软件。但并不是很全。
+
+![](./res/Wappalyzer.png)
+
 
 ## Apps(应用)
 
