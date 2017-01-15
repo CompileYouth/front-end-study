@@ -102,8 +102,11 @@
 
 ![](./res/Web Developer Checklist.png)
 
+### [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm)
 
+检查页面中任意元素的字体。
 
+![](./res/WhatFont.png)
 
 ## Apps(应用)
 
