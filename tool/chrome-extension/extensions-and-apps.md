@@ -7,3 +7,9 @@
 ![](./res/octotree.png)
 
 当你查看 Github 文件时你有没有因为不停切换文件而感到烦扰？octotree 能够将一个 Repository 以文件数的形式展现。
+
+## [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+
+![](./res/JSONView.jpg)
+
+将你的 JSON 数据更好地展现出来。
