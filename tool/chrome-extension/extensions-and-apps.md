@@ -19,3 +19,9 @@
 ![](./res/Code-Cola.png)
 
 以可视化方式在线编辑页面样式。
+
+## [CSSViewer](https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce)
+
+![](./res/CSSViewer.png)
+
+查看页面任意一个元素的 CSS 样式。
