@@ -31,3 +31,9 @@
 ![](./res/Font-Playground.png)
 
 以可视化的方式为页面选中的元素设置不同的字体。
+
+## [Google PageSpeed Insights Extension](https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk)
+
+![](./res/Google-PageSpeed-Insights-Extension.png)
+
+原理同将网址放入到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 中，来测试网页的加载速度。这个插件可以一键为网页加载速度打分，并且可以为你链接到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)。
