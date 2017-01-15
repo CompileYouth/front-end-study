@@ -78,7 +78,11 @@
 
 ![](./res/User-Agent Switcher for Chrome.png)
 
+### [Usersnap - visual feedback & bug reports](https://chrome.google.com/webstore/detail/usersnap-visual-feedback/khehmhbaabkepkojebhcpjifcmojdmgd)
 
+让你快速以可视化的方式提交 bug。
+
+![](./res/Usersnap.jpg)
 
 
 ## Apps(应用)
