@@ -60,7 +60,11 @@
 
 ![](./res/PerfectPixel by WellDoneCode.png)
 
+### [PicMonkey Extension](https://chrome.google.com/webstore/detail/picmonkey-extension/dhipmoghimfdldnocmopeoanjmoolofl)
 
+可以修改页面中的所有图片或者页面截图。
+
+![](./res/PicMonkey Extension.png)
 
 ## Apps(应用)
 
@@ -75,3 +79,9 @@
 为代码创建酷炫的快照
 
 ![](./res/Marmoset.png)
+
+### [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+
+使用 Postman 可以模拟向服务器发起请求。
+
+![](./res/Postman.png)
