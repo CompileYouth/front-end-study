@@ -68,7 +68,7 @@
 
 ### [Responsive Web Design Tester](https://chrome.google.com/webstore/detail/responsive-web-design-tes/objclahbaimlfnbjdeobicmmlnbhamkg)
 
-测试响应式网页的利器。自认为比 Chrome DevTools 自带的 "Device Toolbar" 看的舒心。
+测试响应式网页的利器。自认为比 Chrome DevTools 自带的 "Device Toolbar" 看得舒心。
 
 ![](./res/Responsive Web Design Tester.png)
 
