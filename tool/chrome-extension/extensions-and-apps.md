@@ -42,11 +42,11 @@
 
 ![](./res/Font-Playground.png)
 
-### [Google PageSpeed Insights Extension](https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk)
+### [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm)
 
-原理同将网址放入到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 中，来测试网页的加载速度。这个插件可以一键为网页加载速度打分，并且可以为你链接到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)。
+检查页面中任意元素的字体。
 
-![](./res/Google-PageSpeed-Insights-Extension.png)
+![](./res/WhatFont.png)
 
 ### [Page Ruler](https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn)
 
@@ -60,11 +60,11 @@
 
 ![](./res/PerfectPixel by WellDoneCode.png)
 
-### [PicMonkey Extension](https://chrome.google.com/webstore/detail/picmonkey-extension/dhipmoghimfdldnocmopeoanjmoolofl)
+### [Google PageSpeed Insights Extension](https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk)
 
-可以修改页面中的所有图片或者页面截图。
+原理同将网址放入到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 中，来测试网页的加载速度。这个插件可以一键为网页加载速度打分，并且可以为你链接到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)。
 
-![](./res/PicMonkey Extension.png)
+![](./res/Google-PageSpeed-Insights-Extension.png)
 
 ### [Responsive Web Design Tester](https://chrome.google.com/webstore/detail/responsive-web-design-tes/objclahbaimlfnbjdeobicmmlnbhamkg)
 
@@ -86,7 +86,7 @@
 
 ### [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)
 
-一键识别网页中用到了哪些软件。但并不是很全。
+一键识别网页中用到了哪些软件，但并不是很全。
 
 ![](./res/Wappalyzer.png)
 
@@ -98,15 +98,15 @@
 
 ### [Web Developer Checklist](https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp)
 
-为开发者提供一个最佳事件的检查表。
+为开发者提供一个最佳实践的检查表。
 
 ![](./res/Web Developer Checklist.png)
 
-### [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm)
+### [PicMonkey Extension](https://chrome.google.com/webstore/detail/picmonkey-extension/dhipmoghimfdldnocmopeoanjmoolofl)
 
-检查页面中任意元素的字体。
+可以修改页面中的所有图片或者页面截图。
 
-![](./res/WhatFont.png)
+![](./res/PicMonkey Extension.png)
 
 ## Apps(应用)
 
@@ -127,3 +127,9 @@
 使用 Postman 可以模拟向服务器发起请求。
 
 ![](./res/Postman.png)
+
+### [Google 文档](https://chrome.google.com/webstore/detail/google-docs/aohghmighlieiainnegkcijnfilokake)
+
+具有云储存、同时编辑等功能。
+
+![](./res/Google Doc.jpg)
