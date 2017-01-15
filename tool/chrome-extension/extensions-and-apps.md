@@ -14,7 +14,7 @@
 
 ### [octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
 
-当你查看 Github 文件时你有没有因为不停切换文件而感到烦扰？octotree 能够将一个 Repository 以文件树的形式展现。
+当你查看 Github 文件时你有没有因为不停切换文件而感到烦躁？octotree 能够将一个 Repository 以文件树的形式展现。
 
 ![](./res/octotree.png)
 
