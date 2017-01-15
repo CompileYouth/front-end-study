@@ -4,7 +4,7 @@
 
 - extension(拓展)：在 Chrome 地址栏输入 [chrome://extensions](chrome://extensions) 打开。Chrome 拓展是指可以增加 Chrome 浏览器功能或性能的小程序。“拓展”经常会被大家说成是“插件”
 - app(应用)：Chrome 地址栏输入 [chrome://apps](chrome://apps) 打开。利用网页技术实现与本地桌面程序一样的应用程序。不过除了 Chrome OS，Google 将不再为 Windows、Mac、Linux 提供 App 支持，并且建议我们利用 [PWA](https://developers.google.com/web/progressive-web-apps/) 技术创建 Web app，或者改成写拓展，或者利用 [Electron](https://github.com/electron/electron) 或者 [nw](https://github.com/nwjs/nw.js) 创建本地应用
-- plugin(插件)：Chrome 地址栏输入 [chrome://plugins](chrome://plugins) 打开。这才是 Chrome 的“插件”，这是对浏览器本身功能的增强。比如 "Chrome PDF Viewer" 插件可以使得浏览器具有浏览 PDF 文件的能力。
+- plugin(插件)：Chrome 地址栏输入 [chrome://plugins](chrome://plugins) 打开。这才是 Chrome 的“插件”，这是对浏览器本身功能的增强。比如 "Chrome PDF Viewer" 插件可以使得浏览器具有浏览 PDF 文件的能力
 
 平时我们不用关心插件，我们经常用到的是“拓展”，并且偶尔也会使用到“应用”。所以今天主要就介绍几款 Chrome 拓展和应用。
 
@@ -14,7 +14,7 @@
 
 ### [octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
 
-当你查看 Github 文件时你有没有因为不停切换文件而感到烦扰？octotree 能够将一个 Repository 以文件数的形式展现。
+当你查看 Github 文件时你有没有因为不停切换文件而感到烦扰？octotree 能够将一个 Repository 以文件树的形式展现。
 
 ![](./res/octotree.png)
 
@@ -62,7 +62,7 @@
 
 ### [Google PageSpeed Insights Extension](https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk)
 
-原理同将网址放入到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 中，来测试网页的加载速度。这个插件可以一键为网页加载速度打分，并且可以为你链接到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)。
+原理同将网址放入到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 中，来测试网页的加载速度。这个插件可以一键为网页的加载速度打分，并且可以为你链接到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)。
 
 ![](./res/Google-PageSpeed-Insights-Extension.png)
 
@@ -133,3 +133,5 @@
 为代码创建酷炫的快照
 
 ![](./res/Marmoset.png)
+
+如果你有其他好用的拓展或应用，希望不吝分享。
