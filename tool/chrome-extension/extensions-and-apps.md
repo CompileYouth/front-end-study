@@ -12,38 +12,44 @@
 
 对于开发者来说，Chrome 不仅自身厉害（可以参见[Chrome DevTools](../devtools/Chrome DevTools Overview.md)）,而且背后还有强大的社区，今天就跟大家整理一下 Chrome 中那些针对开发者的拓展及应用。
 
-## [octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
+### [octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
 
 ![](./res/octotree.png)
 
 当你查看 Github 文件时你有没有因为不停切换文件而感到烦扰？octotree 能够将一个 Repository 以文件数的形式展现。
 
-## [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
+### [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
 
 ![](./res/JSONView.jpg)
 
 将你的 JSON 数据更好地展现出来。
 
-## [Code Cola](https://chrome.google.com/webstore/detail/code-cola/lomkpheldlbkkfiifcbfifipaofnmnkn)
+### [Code Cola](https://chrome.google.com/webstore/detail/code-cola/lomkpheldlbkkfiifcbfifipaofnmnkn)
 
 ![](./res/Code-Cola.png)
 
 以可视化方式在线编辑页面样式。
 
-## [CSSViewer](https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce)
+### [CSSViewer](https://chrome.google.com/webstore/detail/cssviewer/ggfgijbpiheegefliciemofobhmofgce)
 
 ![](./res/CSSViewer.png)
 
 查看页面任意一个元素的 CSS 样式。
 
-## [Font Playground](https://chrome.google.com/webstore/detail/font-playground/hdpmpnhaoddjelneingmbnhaibbmjgno)
+### [Font Playground](https://chrome.google.com/webstore/detail/font-playground/hdpmpnhaoddjelneingmbnhaibbmjgno)
 
 ![](./res/Font-Playground.png)
 
 以可视化的方式为页面选中的元素设置不同的字体。
 
-## [Google PageSpeed Insights Extension](https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk)
+### [Google PageSpeed Insights Extension](https://chrome.google.com/webstore/detail/google-pagespeed-insights/edbkhhpodjkbgenodomhfoldapghpddk)
 
 ![](./res/Google-PageSpeed-Insights-Extension.png)
 
 原理同将网址放入到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 中，来测试网页的加载速度。这个插件可以一键为网页加载速度打分，并且可以为你链接到 [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)。
+
+## Apps(应用)
+
+在介绍开发者用的 Apps 之前，我想先介绍一款拓展：[远方 New Tab](https://chrome.google.com/webstore/detail/dream-afar-new-tab/henmfoppjjkcencpbjaigfahdjlgpegn)，与大家熟悉的 [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca) 相似，但我觉得这款拓展更适合我，不仅因为新的 Tab 页面上保留了 Google 原来的搜索框，也添加的几个有用的菜单：History、Bookmarks 和 Apps。所以我平时打开 Chrome apps 的入口都在这个页面。可能有人觉得搜索框影响图片的展现，你还可以将搜索框设置成隐藏，当鼠标悬浮到相应位置时，搜索框也能自动出现。
+
+介绍了这款能够快速打开 Chrome apps 的拓展后，我们来看看有哪些适合开发者使用的应用。
