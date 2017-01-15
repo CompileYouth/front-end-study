@@ -25,3 +25,9 @@
 ![](./res/CSSViewer.png)
 
 查看页面任意一个元素的 CSS 样式。
+
+## [Font Playground](https://chrome.google.com/webstore/detail/font-playground/hdpmpnhaoddjelneingmbnhaibbmjgno)
+
+![](./res/Font-Playground.png)
+
+以可视化的方式为页面选中的元素设置不同的字体。
