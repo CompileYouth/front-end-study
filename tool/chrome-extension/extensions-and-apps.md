@@ -90,6 +90,20 @@
 
 ![](./res/Wappalyzer.png)
 
+### [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)
+
+添加一个工具栏供开发者调试网页。
+
+![](./res/Web-Developer.png)
+
+### [Web Developer Checklist](https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp)
+
+为开发者提供一个最佳事件的检查表。
+
+![](./res/Web Developer Checklist.png)
+
+
+
 
 ## Apps(应用)
 
