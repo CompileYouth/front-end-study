@@ -108,6 +108,18 @@
 
 ![](./res/PicMonkey Extension.png)
 
+### [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+
+React 开发者工具。
+
+![](./res/React Developer Tools.jpg)
+
+### [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
+Vue 开发者工具。
+
+![](./res/Vue.js devtools.png)
+
 ## Apps(应用)
 
 在介绍开发者用的 Apps 之前，我想先介绍一款拓展：[远方 New Tab](https://chrome.google.com/webstore/detail/dream-afar-new-tab/henmfoppjjkcencpbjaigfahdjlgpegn)，与大家熟悉的 [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca) 相似，但我觉得这款拓展更适合我，不仅因为新的 Tab 页面上保留了 Google 原来的搜索框，也添加了几个有用的菜单：History、Bookmarks 和 Apps。所以我平时打开 Chrome apps 的入口都在这个页面。可能有人觉得搜索框影响图片的展现，你还可以将搜索框设置成隐藏，当鼠标悬浮到相应位置时，搜索框也能自动出现。
