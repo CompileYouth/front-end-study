@@ -202,6 +202,8 @@
 
 # 前端工程
 
+npm 与 npm shrinkwrap。
+
 [从输入 URL 到页面加载完成的过程中都发生了什么](./project/从输入 URL 到页面加载完成的过程中都发生了什么.md)
 
 ## NPM
