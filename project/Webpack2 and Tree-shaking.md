@@ -15,3 +15,7 @@ npm install webpack@beta --save-dev
 ```
 
 然后执行 `./node_modules/.bin/webpack --version` 来查看这个项目内的 webpack 的版本，我的是 "2.2.0"。
+
+## Tree-shaking
+
+### 什么是 Tree-shaking
