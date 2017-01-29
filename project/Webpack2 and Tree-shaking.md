@@ -16,10 +16,12 @@ npm install webpack@beta --save-dev
 
 然后执行 `./node_modules/.bin/webpack --version` 来查看这个项目内的 webpack 的版本，我的是 "2.2.0"。
 
-## Tree-shaking
+## Tree Shaking
 
-### 什么是 Tree-shaking
+什么是 Tree Shaking？一言蔽之，就是在项目打包过程中排除那些没有使用到的代码从而达到清理代码目的的技术。
 
-### 如何在 Webpack 中配置 Tree-shaking
+### 什么是 Tree Shaking
 
-### Tree-shaking 和 Dead code elimination
+### 如何在 Webpack 中配置 Tree Shaking
+
+### Tree Shaking 和 Dead code elimination
