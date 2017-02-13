@@ -60,6 +60,8 @@
 
 这部分主要汇总一些比较零碎同时也比较基础的 HTML 知识，对于复杂的 HTML 知识，下面会有专门的章节进行详细地描述。
 
+[<b>/<strong> 与 <i>/<em>](./html/basic/<b><strong> and <i><em>.md)
+
 ### 模式
 
 ### HTML 语义化
