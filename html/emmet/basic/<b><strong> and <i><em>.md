@@ -16,6 +16,17 @@
 
 > i 元素代表在普通文本中具有不同语态或语气的一段文本，某种程度上表明一段不同特性的文本，比如一个分类学名称，一个技术术语，一个外语习语，一个音译，一个想法，或者西方文本中的一艘船名。
 
+```javascript
+// 分类学名称
+<p>The <i class="taxonomy">Felis silvestris catus</i> is cute.</p>
+
+// 术语
+<p>The term <i>prose content</i> is defined above.</p>
+
+// 外语习语
+<p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
+```
+
 ## `<b>`
 
 根据 W3C 对 [`<b>`](https://www.w3.org/TR/html5/text-level-semantics.html#the-b-element) 的定义：
@@ -25,6 +36,25 @@
 翻译一下就是：
 
 > b 元素代表侧重实用目的而不带有任何额外重要性也不暗示不同语态或语气的一段文本，比如一段文本摘要中的关键词、一段审查中的产品名称、文本驱动软件中的可执行语句或者一篇文章的导语。
+
+```javascript
+// 下面的 b 元素起到突出关键词的作用，但不具备强调重要性的作用
+<p>The <b>frobonitor</b> and <b>barbinator</b> components are fried.</p>
+
+// 下面的 b 元素让被包围的词特殊化
+<p>You enter a small room. Your <b>sword</b> glows
+brighter. A <b>rat</b> scurries past the corner wall.</p>
+
+// 下面的 b 元素标注了文章的导语
+<article>
+  <h2>Kittens 'adopted' by pet rabbit</h2>
+  <p><b class="lede">Six abandoned kittens have found an
+    unexpected new mother figure — a pet rabbit.</b></p>
+  <p>Veterinary nurse Melanie Humble took the three-week-old
+    kittens to her Aberdeen home.</p>
+  ...
+</article>
+```
 
 ## `<em>`
 
@@ -97,3 +127,12 @@
  <li><p>Do the laundry.</p></li>
 </ul>
 ```
+
+
+## 小结
+
+`<em>` 用于对文本内容进行强调，强调位置的不同通常会改变句子的含义。如果仅仅在语态或语气上为了突出某一个文本，那应该使用 `<i>`。但如果为了突出某一部分的重要性、严重性或紧急性，那应该使用 `<strong>`。根据 W3C 对 [`<b>`](https://www.w3.org/TR/html5/text-level-semantics.html#the-b-element) 元素的说明，`<b>` 元素应当是在其他标签都不合适的情况下最后一个考虑使用的标签。相同的，在考虑使用 `<i>` 之前，也要想想是否用 `<em>`、`<strong>`、`<dfn>` 或 `<mark>` 等元素更合适。
+
+**结语**
+
+人类的语言真是个伟大的发明，为数不多的单词、文字的组合便能组合成数不胜数、含义千差万别的句子，而同一个句子又可能因为不同的语音语调导致含义天壤之别，这同时也是自然语言处理的瓶颈之处。正因为如此，HTML5 才会定义那么多像 b/strong、i/em 这样差别微小的标签吧。
