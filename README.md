@@ -150,6 +150,10 @@
 
 [JavaScript 中的 console](./js/console/JavaScript 中的 console.md)
 
+### setTimeout 与 setInterval
+
+[深入理解 JavaScript 中的 setTimeout 和 setInterval](./js/setTimeout and setInterval/setTimeout and setInterval.md)
+
 ## 闭包
 
 
