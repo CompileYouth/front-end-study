@@ -232,6 +232,8 @@ npm 与 npm shrinkwrap。
 
 [常见 Web 安全攻击](./project/security/常见 Web 安全攻击.md)
 
+[一篇文章让你了解被 Google 攻破的 SHA-1](./project/security/What's SHA-1.md)
+
 
 ## REST
 
