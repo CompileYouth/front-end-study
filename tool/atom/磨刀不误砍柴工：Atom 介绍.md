@@ -49,7 +49,7 @@ Atom 的背后有一个强大的社区，带来了一大波插件，被称为 pa
 apm install pigments
 ```
 
-这里就插播一句，安装了 Node 后，npm(Node Package Manager) 也一起安装了，通过 `npm` 命令可以安装 Node 的 package。但是速度一般会比较慢，所以我们习惯上会再安装一个 nrm(Node Regisry Manager)，这是一个 npm 注册中心的管理工具，npm 注册中心代表 packages 存放的地方。如果使用默认的注册中心，那么安装时就需要从国外的服务器中下载 package，速度就比较慢，所以我们会利用 nrm 来将国外的注册中心切换至中国的 taobao 注册中心，具体讲是利用如下命令：
+这里就插播一句，安装了 Node 后，npm(Node Package Manager) 也一起安装了，通过 `npm` 命令可以安装 Node 的 package。但是速度一般会比较慢，所以我们习惯上会再安装一个 nrm(NPM Registry Manager)，这是一个 npm 注册中心的管理工具，npm 注册中心代表 packages 存放的地方。如果使用默认的注册中心，那么安装时就需要从国外的服务器中下载 package，速度就比较慢，所以我们会利用 nrm 来将国外的注册中心切换至中国的 taobao 注册中心，具体讲是利用如下命令：
 
 ```
 nrm use taobao
@@ -59,7 +59,7 @@ nrm use taobao
 
 ![](./res/nrm.png)
 
-## Snippts
+## Snippets
 
 将你一般比较常写的代码做成模板，方便以后自动填充。
 
