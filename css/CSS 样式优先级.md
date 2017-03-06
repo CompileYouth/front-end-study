@@ -6,9 +6,11 @@
 
 CSS 的继承特性指的是应用在一个标签上的那些 CSS 属性被传到其子标签上。看下面的 HTML 结构：
 
-	<div>
-		<p></p>
-	</div>
+```
+<div>
+	<p></p>
+</div>
+```
 
 如果 `<div>` 有个属性 `color: red`，则这个属性将被 `<p>` 继承，即 `<p>` 也拥有属性 `color: red`。
 
@@ -18,24 +20,28 @@ CSS 的继承特性指的是应用在一个标签上的那些 CSS 属性被传�
 
 例1：
 
-	<!-- 类名为 son 的 div 的 color 为 blue -->
-	<div style="color: red">
-		<div style="color: blue">
-			<div class="son"></div>
-		</div>
+```
+<!-- 类名为 son 的 div 的 color 为 blue -->
+<div style="color: red">
+	<div style="color: blue">
+		<div class="son"></div>
 	</div>
+</div>
+```
 
 
 如果我们把一个标签从祖先那里继承来的而自身没有的属性叫做“祖先样式”，那么“直接样式”就是一个标签直接拥有的属性。又有如下规则：
 
-**CSS 优先规则2：**“直接样式”比“祖先样式”优先级高。
+**CSS 优先规则2：** “直接样式”比“祖先样式”优先级高。
 
 例2：
 
-	<!-- 类名为 son 的 div 的 color 为 blue -->
-	<div style="color: red">
-		<div class="son" style="color: blue"></div>
-	</div>
+```
+<!-- 类名为 son 的 div 的 color 为 blue -->
+<div style="color: red">
+	<div class="son" style="color: blue"></div>
+</div>
+```
 
 ## 选择器的优先级
 
@@ -48,25 +54,27 @@ CSS 的继承特性指的是应用在一个标签上的那些 CSS 属性被传�
 - 标签选择器， 如 span{}
 - 通配选择器， 如 *{}
 
-**CSS 优先规则3：**优先级关系：内联样式 > ID 选择器 > 类选择器 = 属性选择器 = 伪类选择器 > 标签选择器 = 伪元素选择器
+**CSS 优先规则3：** 优先级关系：内联样式 > ID 选择器 > 类选择器 = 属性选择器 = 伪类选择器 > 标签选择器 = 伪元素选择器
 
 例3：
 
-	// HTML
-	<div class="content-class" id="content-id" style="color: black"></div>
+```
+// HTML
+<div class="content-class" id="content-id" style="color: black"></div>
 
-	// CSS
-	#content-id {
-		color: red;
-	}
-	.content-class {
-		color: blue;
-	}
-	div {
-		color: grey;
-	}
+// CSS
+#content-id {
+	color: red;
+}
+.content-class {
+	color: blue;
+}
+div {
+	color: grey;
+}
+```
 
-	<div> 最终的 color 为 black，因为内联样式比其他选择器的优先级高。
+<div> 最终的 color 为 black，因为内联样式比其他选择器的优先级高。
 
 所有 CSS 的选择符由上述 6 种基础的选择器或者或者组合而成，组合的方式有 3 种：
 
@@ -76,22 +84,24 @@ CSS 的继承特性指的是应用在一个标签上的那些 CSS 属性被传�
 
 当一个标签同时被多个选择符选中，我们便需要确定这些选择符的优先级。我们有如下规则：
 
-**CSS 优先规则4：**计算选择符中 ID 选择器的个数（a），计算选择符中类选择器、属性选择器以及伪类选择器的个数之和（b），计算选择符中标签选择器和伪元素选择器的个数之和（c）。按 a、b、c 的顺序依次比较大小，大的则优先级高，相等则比较下一个。若最后两个的选择符中 a、b、c 都相等，则按照“就近原则”来判断。
+**CSS 优先规则4：** 计算选择符中 ID 选择器的个数（a），计算选择符中类选择器、属性选择器以及伪类选择器的个数之和（b），计算选择符中标签选择器和伪元素选择器的个数之和（c）。按 a、b、c 的顺序依次比较大小，大的则优先级高，相等则比较下一个。若最后两个的选择符中 a、b、c 都相等，则按照“就近原则”来判断。
 
 例4：
 
-	// HTML
-	<div id="con-id">
-		<span class="con-span"></span>
-	</div>
+```
+// HTML
+<div id="con-id">
+	<span class="con-span"></span>
+</div>
 
-	// CSS
-	#con-id span {
-		color: red;
-	}
-	div .con-span {
-		color: blue;
-	}
+// CSS
+#con-id span {
+	color: red;
+}
+div .con-span {
+	color: blue;
+}
+```
 
 	由规则 4 可见，<span> 的 color 为 red。
 
@@ -99,52 +109,73 @@ CSS 的继承特性指的是应用在一个标签上的那些 CSS 属性被传�
 
 例5：
 
-	// HTML
-	<link rel="stylesheet" type="text/css" href="style-link.css">
-	<style type="text/css">
-	@import url(style-import.css);
-	div {
-		background: blue;
-	}
-	</style>
+```
+// HTML
+<link rel="stylesheet" type="text/css" href="style-link.css">
+<style type="text/css">
+@import url(style-import.css);
+div {
+	background: blue;
+}
+</style>
 
-	<div></div>
+<div></div>
 
-	// style-link.css
-	div {
-		background: lime;
-	}
+// style-link.css
+div {
+	background: lime;
+}
 
-	// style-import.css
-	div {
-		background: grey;
-	}
+// style-import.css
+div {
+	background: grey;
+}
+```
 
-	从顺序上看，内部样式在最下面，被最晚引用，所以 <div> 的背景色为 blue。
+从顺序上看，内部样式在最下面，被最晚引用，所以 <div> 的背景色为 blue。
 
 上面代码中，`@import` 语句必须出现在内部样式之前，否则文件引入无效。当然不推荐使用 `@import` 的方式引用外部样式文件，原因见另一篇博客：[CSS 引入方式](http://segmentfault.com/a/1190000003866058)。
 
+另外一个需要注意的是，`class` 中类名对应的样式与类名的前后顺序无关。什么意思呢，看例子：
+
+```
+// HTML
+<div class="a b"></div>
+
+// CSS
+.a {
+	color: red;
+}
+.b {
+	color: blue;
+}
+```
+
+这个例子中 `div` 元素的 `color` 只与 `a` 和 `b` 两个类定义时的顺序有关，所以 `div` 的 `color` 是 blue，如果把标签改成： `<div class="b a"></div>`，那么样式仍然不变。
+
 CSS 还提供了一种可以完全忽略以上规则的方法，当你一定、必须确保某一个特定的属性要显示时，可以使用这个技术。
 
-**CSS 优先规则5：**属性后插有 `!important` 的属性拥有最高优先级。若同时插有 `!important`，则再利用规则 3、4 判断优先级。
+**CSS 优先规则5：** 属性后插有 `!important` 的属性拥有最高优先级。若同时插有 `!important`，则再利用规则 3、4 判断优先级。
 
 例6：
 
-	// HTML
-	<div class="father">
-		<p class="son"></p>
-	</div>
+```
+// HTML
+<div class="father">
+	<p class="son"></p>
+</div>
 
-	// CSS
-	p {
-		background: red !important;
-	}
-	.father .son {
-		background: blue;
-	}
+// CSS
+p {
+	background: red !important;
+}
+.father .son {
+	background: blue;
+}
+```
 
-	虽然 .father .son 拥有更高的权值，但选择器 p 中的 background 属性被插入了 !important，
-	所以 <p> 的 background 为 red。
+虽然 .father .son 拥有更高的权值，但选择器 p 中的 background 属性被插入了 !important，
+所以 <p> 的 background 为 red。
 
 
 ## 错误的说法
