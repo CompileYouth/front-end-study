@@ -218,6 +218,11 @@ npm 与 npm shrinkwrap。
 ## NPM
 
 
+## 性能优化
+
+[前端性能优化](./project/performance/Performance.md)
+
+
 
 ## Gulp
 
