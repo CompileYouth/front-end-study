@@ -62,6 +62,8 @@
 
 [b,strong and i,em 元素详解](./html/basic/b,strong and i,em.md)
 
+[DOMContentLoaded 事件详解](./html/domcontentloaded/DOMContentLoaded.md)
+
 ### 模式
 
 ### HTML 语义化
