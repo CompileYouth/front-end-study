@@ -8,7 +8,7 @@
 
 直观地感受了 DOMContentLoaded，那它究竟是个什么东东呢？
 
-## 什么是DOMContentLoaded
+## 什么是 DOMContentLoaded
 
 有兴趣的可以看下 [W3C 的 HTML5 规范](https://www.w3.org/TR/html5/syntax.html#the-end)是如何描述 DOMContentLoaded 的，不感兴趣也没关系，我们继续往下走。那么我们可以看一下 [MDN 对 DOMContentLoaded 的描述](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded)，啥，你还是不感兴趣啊？也没关系，接触一个新概念时，没人喜欢一上来就看那么晦涩的文字的。那我下面就用通俗的语言跟你聊聊什么是 DOMContentLoaded。
 
@@ -18,11 +18,11 @@
 
 这时问题又来了，“HTML 文档被加载和解析完成”是什么意思呢？或者说，HTML 文档被加载和解析完成之前，浏览器做了哪些事情呢？那我们需要从浏览器渲染原理来谈谈。
 
-浏览器向服务器请求到了 HTML 文档后便开始解析，产物是 DOM（文档对象模型），如果有 CSS 的会根据 CSS 生成 CSSOM（CSS 对象模型），然后再由 DOM 和 CSSOM 合并产生渲染树。有了渲染树，知道了所有节点的样式，下面便根据这些节点以及样式计算它们在浏览器中确切的大小和位置，这就是布局阶段。有了以上这些信息，下面就把节点绘制到浏览器上。所有的过程如下图所示：
+浏览器向服务器请求到了 HTML 文档后便开始解析，产物是 DOM（文档对象模型），到这里 HTML 文档就被加载和解析完成了。如果有 CSS 的会根据 CSS 生成 CSSOM（CSS 对象模型），然后再由 DOM 和 CSSOM 合并产生渲染树。有了渲染树，知道了所有节点的样式，下面便根据这些节点以及样式计算它们在浏览器中确切的大小和位置，这就是布局阶段。有了以上这些信息，下面就把节点绘制到浏览器上。所有的过程如下图所示：
 
 ![](./res/dcl-render-tree.png)
 
-现在你可能了解 HTML 文档被加载和解析完成前浏览器做了哪些工作，但还没完，因为我们还没有考虑现在前端的主角之一 JavaScript。
+现在你可能了解 HTML 文档被加载和解析完成前浏览器大概做了哪些工作，但还没完，因为我们还没有考虑现在前端的主角之一 JavaScript。
 
 JavaScript 可以阻塞 DOM 的生成，也就是说当浏览器在解析 HTML 文档时，如果遇到 `<script>`，便会停下对 HTML 文档的解析，转而去处理脚本。如果脚本是内联的，浏览器会先去执行这段内联的脚本，如果是外链的，那么先会去加载脚本，然后执行。在处理完脚本之后，浏览器便继续解析 HTML 文档。看下面的例子：
 
@@ -46,27 +46,27 @@ JavaScript 可以阻塞 DOM 的生成，也就是说当浏览器在解析 HTML �
 
 ## 异步脚本
 
-我们到这里一直在说同步脚本对网页渲染的影响，那如果我们想让页面尽快显示，那我们可以使用异步脚本。HTML5 中定义了两个定义异步脚本的方法：defer 和 async。我们来看一看他们的区别。
+我们到这里一直在说同步脚本对网页渲染的影响，如果我们想让页面尽快显示，那我们可以使用异步脚本。HTML5 中定义了两个定义异步脚本的方法：defer 和 async。我们来看一看他们的区别。
 
-![](./res/dcl-legend.svg)
+![](./res/dcl-legend.png)
 
 同步脚本（标签中不含 async 或 defer）： `<script src="***.js" charset="utf-8"></script>`
 
 当 HTML 文档被解析时如果遇见（同步）脚本，则停止解析，先去加载脚本，然后执行，执行结束后继续解析 HTML 文档。过程如下图：
 
-![](./res/dcl-script.svg)
+![](./res/dcl-script.png)
 
 defer 脚本：`<script src="***.js" charset="utf-8" defer></script>`
 
 当 HTML 文档被解析时如果遇见 defer 脚本，则在后台加载脚本，文档解析过程不中断，而等文档解析结束之后，defer 脚本执行。另外，defer 脚本的执行顺序与定义时的位置有关。过程如下图：
 
-![](./res/dcl-defer.svg)
+![](./res/dcl-defer.png)
 
-async 脚本：`<script src="" charset="utf-8" async></script>`
+async 脚本：`<script src="***.js" charset="utf-8" async></script>`
 
 当 HTML 文档被解析时如果遇见 async 脚本，则在后台加载脚本，文档解析过程不中断。脚本加载完成后，文档停止解析，脚本执行，执行结束后文档继续解析。过程如下图：
 
-![](./res/dcl-async.svg)
+![](./res/dcl-async.png)
 
 （图片来源：[async vs defer attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html))
 
