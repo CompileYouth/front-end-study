@@ -262,5 +262,3 @@ npm 与 npm shrinkwrap。
 
 
 ## 模仿微信开发一款基于 Socket.IO 的单页应用
-
-Back again
