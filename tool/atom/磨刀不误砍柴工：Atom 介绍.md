@@ -172,6 +172,11 @@ Install 部分，我们可以搜索并安装 Atom 的插件包或主题。下面
 - emmet： 写 HTML 的利器，根据特定语法快速生成 HTML
 - language-babel： 支持 ES2015、JSX 等语法高亮
 
+### 迁移
+
+当换了一台电脑，那如何迁移现在这台上安装的包呢？可以使用：`apm list --installed --bare > package-list.txt` 生成一个包含安装包信息的文件，再在目标电脑上键入 `apm install --packages-file package-list.txt` 就可以等待 Atom 自己安装啦。
+
+
 # 便捷的操作
 
 下面列举一些我常用的快捷操作，这些操作很大程度上帮助我提升了效率。部分内容会与上面的 Atom 特色重复。
