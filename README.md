@@ -250,15 +250,4 @@ npm 与 npm shrinkwrap。
 
 # 项目实践
 
-## 开发一个 Chrome 拓展
-
-
-## 搭建一个自己的博客（网页端、手机端、ios端、安卓端）
-
-
-
-## 模仿 Google Map 开发一款单页应用
-
-
-
-## 模仿微信开发一款基于 Socket.IO 的单页应用
+[iPhoneX适配解决方案]()
